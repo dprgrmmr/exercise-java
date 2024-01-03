@@ -8,10 +8,11 @@ public class DoubleChar {
 		System.out.println("The result equals " + result);
 	}
 	public String doubleChar(String str) {
-		  String result = "";
+		  StringBuffer result = new StringBuffer();
 		  for (int j = 0; j < str.length(); j++){
-		  result += "" + str.charAt(j) + str.charAt(j);
+		  result.append(str.charAt(j));
+		  result.append(str.charAt(j));
 		  }
-		  return result;
+		  return result.toString();
 		}
 }
