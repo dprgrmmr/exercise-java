@@ -5,14 +5,13 @@ public class DoubleChar {
 	public static void main(String[] args) {
 		DoubleChar doubleChar = new DoubleChar();
 		String result = doubleChar.doubleChar("abcd");
-		System.out.println(result);
+		System.out.println("The result equals " + result);
 	}
 	public String doubleChar(String str) {
 		  String result = "";
 		  for (int j = 0; j < str.length(); j++){
-		  result += str.charAt(j) + str.charAt(j);
+		  result += "" + str.charAt(j) + str.charAt(j);
 		  }
 		  return result;
 		}
-
 }
