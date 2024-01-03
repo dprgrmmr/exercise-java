@@ -2,11 +2,17 @@ package codingBat;
 
 public class DoubleChar {
 	
+	public static void main(String[] args) {
+		DoubleChar doubleChar = new DoubleChar();
+		String result = doubleChar.doubleChar("abcd");
+		System.out.println(result);
+	}
 	public String doubleChar(String str) {
-		  String word = "";
+		  String result = "";
 		  for (int j = 0; j < str.length(); j++){
-		  word += str.substring(j, j+1) + str.substring(j, j+1);
+		  result += str.charAt(j) + str.charAt(j);
 		  }
-		  return word;
+		  return result;
 		}
+
 }
