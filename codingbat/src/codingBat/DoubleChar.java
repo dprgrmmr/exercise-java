@@ -13,6 +13,7 @@ public class DoubleChar {
 		  result.append(str.charAt(j));
 		  result.append(str.charAt(j));
 		  }
-		  return result.toString();
+		  String output = "" + result;
+		  return output;
 		}
 }
