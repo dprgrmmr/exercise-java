@@ -9,11 +9,10 @@ public class DoubleChar {
 	}
 	public String doubleChar(String str) {
 		  StringBuffer result = new StringBuffer();
-		  for (int j = 0; j < str.length(); j++){
-		  result.append(str.charAt(j));
-		  result.append(str.charAt(j));
+		  for (char c : str.toCharArray()){
+		  result.append(c);
+		  result.append(c);
 		  }
-		  String output = "" + result;
-		  return output;
+		  return result.toString();
 		}
 }
