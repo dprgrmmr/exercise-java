@@ -5,6 +5,14 @@ import java.util.Arrays;
 public class RotateRightK {
 
 	public int[] rotateRightK(int[] arr, int k) {
+		if (arr == null) {
+			return null;
+		}
+		
+		if (arr.length == 0) {
+			return arr;
+		}
+		
 		for (int j = 0; j < k; j++) {
 			int temp = arr[arr.length - 1];
 			for (int i = arr.length - 1; i > 0; i--) {
@@ -21,7 +29,10 @@ public class RotateRightK {
 		int[] result = rtRight.rotateRightK(arr, 3);
 		System.out.println(Arrays.toString(result));
 	
-	
-	
+		result = rtRight.rotateRightK(null, 2);
+		System.out.println(Arrays.toString(result));
+		
+		result = rtRight.rotateRightK(new int[] {}, 2);
+		System.out.println(Arrays.toString(result));
 	}
 }
