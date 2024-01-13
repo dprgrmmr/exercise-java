@@ -8,19 +8,19 @@ public class RotateRightK {
 		if (arr == null) {
 			return null;
 		}
-		
 		if (arr.length == 0) {
 			return arr;
 		}
-		
-		for (int j = 0; j < k; j++) {
-			int temp = arr[arr.length - 1];
-			for (int i = arr.length - 1; i > 0; i--) {
-				arr[i] = arr[i - 1];
+		int[] result = new int[arr.length];
+		int j = k;
+		for (int i = 0; i < arr.length; i++) {
+			result[j] = arr[i];
+			j++;
+			if (j == arr.length) {
+				j = 0;
 			}
-			arr[0] = temp;
-			}
-			return arr;
+		}
+			return result;
 	}
 	
 	public static void main(String[] args) {
