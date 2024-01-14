@@ -8,9 +8,15 @@ public class RotateRightK {
 		if (arr == null) {
 			return null;
 		}
+		
 		if (arr.length == 0) {
 			return arr;
 		}
+		
+		if (k == 0) {
+			return arr;
+		}
+		
 		int[] result = new int[arr.length];
 		int j = k;
 		for (int i = 0; i < arr.length; i++) {
