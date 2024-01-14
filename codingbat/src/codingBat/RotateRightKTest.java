@@ -30,5 +30,13 @@ public class RotateRightKTest {
 		int[] result = rtRight.rotateRightK(new int[] {}, 2);
 		Assertions.assertTrue(Arrays.equals(new int[] {}, result));
 	}
+	
+	@Test
+	public void rotateRightZero() {
+		RotateRightK rtRight = new RotateRightK();
+		int[] arr = new int[] {6, 7, 9, 0};
+		int[] result = rtRight.rotateRightK(arr, 0);
+		Assertions.assertTrue(Arrays.equals(arr, result));
+	}
 
 }
