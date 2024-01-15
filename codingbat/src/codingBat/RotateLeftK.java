@@ -14,6 +14,9 @@ public class RotateLeftK {
 			return arr;
 		}
 		
+		if (k == 0) {
+			return arr;
+		}
 	
 	int[] result = new int[arr.length];
 	int j = k;
