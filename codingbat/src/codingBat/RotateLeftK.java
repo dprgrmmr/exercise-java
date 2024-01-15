@@ -14,14 +14,17 @@ public class RotateLeftK {
 			return arr;
 		}
 		
-		for (int j = 0; j < k; j++) {
-		int temp = arr[0];
-		for (int i = 1; i < arr.length; i++) {
-			arr[i - 1] = arr[i];
+	
+	int[] result = new int[arr.length];
+	int j = k;
+		for (int i = 0; i < arr.length; i++) {
+			result[i] = arr[j];
+			j++;
+			if (j == arr.length) {
+				j = 0;
+			}
 		}
-		arr[arr.length - 1] = temp;
-		}
-		return arr;
+		return result;
 	}
 	
 	public static void main(String[] args) {
