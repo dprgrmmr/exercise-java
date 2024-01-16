@@ -10,10 +10,6 @@ public class RotateLeftK {
 			return null;
 		}
 		
-		if (k < 0) {
-			return rtLeftNeg.rotateRightK(arr, (0 - k));
-		}
-		
 		if (arr.length == 0) {
 			return arr;
 		}
@@ -39,9 +35,6 @@ public class RotateLeftK {
 		RotateLeftK rtLeft = new RotateLeftK();
 		int[] arr = new int[] {1, 3, 5, 8, 7};
 		int[] result = rtLeft.rotateLeftK(arr, 2);
-		System.out.println(Arrays.toString(result));
-		
-		result = rtLeft.rotateLeftK(arr, -1);
 		System.out.println(Arrays.toString(result));
 		
 		result = rtLeft.rotateLeftK(null, 2);
