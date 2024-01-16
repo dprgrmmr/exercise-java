@@ -5,9 +5,13 @@ import java.util.Arrays;
 public class RotateLeftK {
 
 	public int[] rotateLeftK(int[] arr, int k) {
-		
+		RotateRightK rtLeftNeg = new RotateRightK();
 		if (arr == null) {
 			return null;
+		}
+		
+		if (k < 0) {
+			return rtLeftNeg.rotateRightK(arr, (0 - k));
 		}
 		
 		if (arr.length == 0) {
@@ -17,6 +21,7 @@ public class RotateLeftK {
 		if (k == 0) {
 			return arr;
 		}
+		
 	
 	int[] result = new int[arr.length];
 	int j = k;
@@ -36,9 +41,14 @@ public class RotateLeftK {
 		int[] result = rtLeft.rotateLeftK(arr, 2);
 		System.out.println(Arrays.toString(result));
 		
+		result = rtLeft.rotateLeftK(arr, -1);
+		System.out.println(Arrays.toString(result));
+		
 		result = rtLeft.rotateLeftK(null, 2);
 		System.out.println(Arrays.toString(result));
 		result = rtLeft.rotateLeftK(new int[] {}, 1);
 		System.out.println(Arrays.toString(result));
+		
+		
 	}
 }
