@@ -5,8 +5,7 @@ import java.util.Arrays;
 public class RotateK {
 
 	public int[] rotateK(int[] arr, int k) {
-		RotateRightK rtRightPos = new RotateRightK();
-		RotateLeftK rtLeftNeg = new RotateLeftK();
+		
 		if (arr == null) {
 			return null;
 		}
@@ -20,8 +19,10 @@ public class RotateK {
 		}
 		
 		if (k < 0) {
+			RotateLeftK rtLeftNeg = new RotateLeftK();
 			return rtLeftNeg.rotateLeftK(arr, (0 - k));
 		}
+		RotateRightK rtRightPos = new RotateRightK();
 		return rtRightPos.rotateRightK(arr, k);
 	}
 	
