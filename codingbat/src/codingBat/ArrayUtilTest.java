@@ -10,11 +10,13 @@ public class ArrayUtilTest {
 
 	@Test
 	public void reverseArrayHappyCase() {
+		// array length is odd
 		Assertions.assertTrue(
 				Arrays.equals(
 						new int[] {5, 4, 3, 2, 1}, 
 						ArrayUtil.reverse(
 								new int[] {1, 2, 3, 4, 5})));
+		// array length is even
 		Assertions.assertTrue(
 				Arrays.equals(
 						new int[] {4, 3, 2, 1}, 
