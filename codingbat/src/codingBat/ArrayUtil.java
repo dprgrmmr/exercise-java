@@ -23,16 +23,25 @@ public class ArrayUtil {
 		return arr;
 	}
 	
-	public static void main(String[] args) {
-		ArrayUtil reverse = new ArrayUtil();
-		int[] arr = new int[] {1, 2, 3, 4, 5};
-		int[] result = reverse.reverse(arr);
-		System.out.println(Arrays.toString(result));
+	public static int[] rotateK(int[] arr, int k) {
 		
-		result = reverse.reverse(null);
-		System.out.println(Arrays.toString(result));
+		if (arr == null) {
+			return null;
+		}
 		
-		result = reverse.reverse(new int[0]);
-		System.out.println(Arrays.toString(result));
+		if (arr.length == 0) {
+			return arr;
+		}
+		
+		if (k == 0) {
+			return arr;
+		}
+		
+		if (k < 0) {
+			RotateLeftK rtLeftNeg = new RotateLeftK();
+			return rtLeftNeg.rotateLeftK(arr, (0 - k));
+		}
+		RotateRightK rtRightPos = new RotateRightK();
+		return rtRightPos.rotateRightK(arr, k);
 	}
 }
