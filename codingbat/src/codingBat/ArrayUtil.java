@@ -44,4 +44,22 @@ public class ArrayUtil {
 		RotateRightK rtRightPos = new RotateRightK();
 		return rtRightPos.rotateRightK(arr, k);
 	}
+	public static String doubleChar(String str) {
+		  StringBuffer result = new StringBuffer();
+		  
+		  if (str == null) {
+			  return null;
+		  }
+		  
+		  if (str.isEmpty()) {
+			  return str;
+		  }
+		  
+		  for (char c : str.toCharArray()){
+			  result.append(c);
+			  result.append(c);
+		  }
+		  
+		  return result.toString();
+		}
 }
