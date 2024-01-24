@@ -45,7 +45,7 @@ public class ArrayUtil {
 		return rtRightPos.rotateRightK(arr, k);
 	}
 	
-	public int[] rotateLeftK(int[] arr, int k) {
+	public static int[] rotateLeftK(int[] arr, int k) {
 		RotateRightK rtLeftNeg = new RotateRightK();
 		if (arr == null) {
 			return null;
@@ -69,5 +69,29 @@ public class ArrayUtil {
 			}
 		}
 		return result;
+	}
+	public static int[] rotateRightK(int[] arr, int k) {
+		if (arr == null) {
+			return null;
+		}
+		
+		if (arr.length == 0) {
+			return arr;
+		}
+		
+		if (k == 0) {
+			return arr;
+		}
+		
+		int[] result = new int[arr.length];
+		int j = k;
+		for (int i = 0; i < arr.length; i++) {
+			result[j] = arr[i];
+			j++;
+			if (j == arr.length) {
+				j = 0;
+			}
+		}
+			return result;
 	}
 }
