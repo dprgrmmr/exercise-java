@@ -94,9 +94,14 @@ public class ArrayUtil {
 		}
 			return result;
 	}
-	public static int max(int[] array) {
+	public static int max(int[] arr) {
 		int max = Integer.MIN_VALUE;
-		for (int i : array) {
+		
+		if (arr.length == 0) {
+			max = 0;
+		}
+		
+		for (int i : arr) {
 			if (i > max) {
 				max = i;
 			}
