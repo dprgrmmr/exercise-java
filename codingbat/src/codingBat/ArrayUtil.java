@@ -94,6 +94,7 @@ public class ArrayUtil {
 		}
 			return result;
 	}
+	
 	public static int max(int[] arr) {
 		int max = Integer.MIN_VALUE;
 		
@@ -107,5 +108,20 @@ public class ArrayUtil {
 			}
 		}
 		return max;
+	}
+	
+	public static int min(int[] arr) {
+	int min = Integer.MAX_VALUE;
+	
+	if (arr.length == 0) {
+		min = 0;
+	}
+	
+	for (int i : arr) {
+		if (i < min) {
+			min = i;
+			}
+		}
+	return min;
 	}
 }
