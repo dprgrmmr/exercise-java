@@ -21,4 +21,14 @@ public class MinTest {
 						new int[0]));
 		
 	}
+	
+	@Test
+	public void minNullArray() {
+		try {
+			ArrayUtil.min(null);
+		} 
+		catch (IllegalArgumentException iae) {
+			System.out.println(iae);
+		}
+	}
 }
