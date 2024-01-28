@@ -98,6 +98,10 @@ public class ArrayUtil {
 	public static int max(int[] arr) {
 		int max = Integer.MIN_VALUE;
 		
+		if (arr == null) {
+			throw new IllegalArgumentException("Array arr is null");
+		}
+		
 		if (arr.length == 0) {
 			max = 0;
 		}
@@ -112,6 +116,10 @@ public class ArrayUtil {
 	
 	public static int min(int[] arr) {
 	int min = Integer.MAX_VALUE;
+	
+	if (arr == null) {
+		throw new IllegalArgumentException("Array arr is null");
+	}
 	
 	if (arr.length == 0) {
 		min = 0;
