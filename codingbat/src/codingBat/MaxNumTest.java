@@ -20,4 +20,15 @@ public class MaxNumTest {
 						new int[0]));
 		
 	}
+	
+	@Test 
+	public void maxNumNullArray() {
+		
+		try {
+			ArrayUtil.max(null);
+		} 
+		catch (IllegalArgumentException iae) {
+			System.out.println(iae);
+		}
+	}
 }
