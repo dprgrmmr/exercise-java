@@ -134,6 +134,21 @@ public class ArrayUtil {
 	}
 	
 	public static boolean isEverywhere(int[] arr, int num) {
-		return false;
+		boolean everywhere = true;
+		
+		if (arr == null) {
+			return false;
+		}
+		
+		if (arr.length <= 1) {
+			return false;
+		}
+		for (int i = 0; i < arr.length - 1; i++) {
+			if (arr[i] != num && arr[i + 1] != num) {
+				everywhere = false;
+				i = arr.length;
+			}
+		}
+		return everywhere;
 	}
 }
