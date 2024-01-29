@@ -133,8 +133,15 @@ public class ArrayUtil {
 	return min;
 	}
 	
+	/**
+	 * {@link isEverywhere} is a method that returns true if for
+	 * every consecutive pair of integers, num appears at least once
+	 * 
+	 * @param arr is the input array 
+	 * @param num is the target number
+	 * @return true if "everywhere" condition matches
+	 */
 	public static boolean isEverywhere(int[] arr, int num) {
-		boolean everywhere = true;
 		
 		if (arr == null) {
 			return false;
@@ -143,10 +150,14 @@ public class ArrayUtil {
 		if (arr.length <= 1) {
 			return false;
 		}
+		
+		boolean everywhere = true;
+		
 		for (int i = 0; i < arr.length - 1; i++) {
+			System.out.println(arr[i]);
 			if (arr[i] != num && arr[i + 1] != num) {
 				everywhere = false;
-				i = arr.length;
+				break;
 			}
 		}
 		return everywhere;
