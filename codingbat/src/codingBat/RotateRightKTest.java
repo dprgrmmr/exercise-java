@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Assertions;
 public class RotateRightKTest {
 	
 	@Test
-	public void rotateRightK() {
+	public void rotateRightKHappyCase() {
 		RotateRightK rtRight = new RotateRightK();
 		int[] arr = new int[] {6, 7, 9, 0};
 		int[] expected = new int[] {7, 9, 0, 6};
@@ -18,21 +18,21 @@ public class RotateRightKTest {
 	}
 	
 	@Test
-	public void rotateRightKArrayIsNull() {
+	public void rotateRightKNullReturnsNull() {
 		RotateRightK rtRight = new RotateRightK();
 		int[] result = rtRight.rotateRightK(null, 2);
 		Assertions.assertEquals(null, result);
 	}
 	
 	@Test
-	public void rotateRightKArrayLengthIsZero() {
+	public void rotateRightKEmptyArrayReturnsEmptyArray() {
 		RotateRightK rtRight =  new RotateRightK();
 		int[] result = rtRight.rotateRightK(new int[] {}, 2);
 		Assertions.assertTrue(Arrays.equals(new int[] {}, result));
 	}
 	
 	@Test
-	public void rotateRightZero() {
+	public void rotateRightZeroReturnsSameArray() {
 		RotateRightK rtRight = new RotateRightK();
 		int[] arr = new int[] {6, 7, 9, 0};
 		int[] result = rtRight.rotateRightK(arr, 0);
