@@ -132,4 +132,8 @@ public class ArrayUtil {
 		}
 	return min;
 	}
+	
+	public static boolean isEverywhere(int[] arr, int num) {
+		return false;
+	}
 }
