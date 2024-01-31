@@ -95,6 +95,12 @@ public class ArrayUtil {
 			return result;
 	}
 	
+	/**
+	 * <p>{@link max} finds the max number in the array</p>
+	 * 
+	 * @param arr is input array
+	 * @return maximum number
+	 */
 	public static int max(int[] arr) {
 		int max = Integer.MIN_VALUE;
 		
