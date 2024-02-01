@@ -120,6 +120,12 @@ public class ArrayUtil {
 		return max;
 	}
 	
+	/**
+	 * <p>{@link min} finds the min number in the array</p>
+	 * 
+	 * @param arr is input array
+	 * @return minimum number
+	 */
 	public static int min(int[] arr) {
 	int min = Integer.MAX_VALUE;
 	
