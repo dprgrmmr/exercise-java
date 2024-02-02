@@ -70,6 +70,14 @@ public class ArrayUtil {
 		}
 		return result;
 	}
+	
+	/**
+	 * <p>{@link rotateRightK} rotates the elements in the array k times</p>
+	 * to the right
+	 * 
+	 * @param arr is input array
+	 * @return rotated array
+	 */
 	public static int[] rotateRightK(int[] arr, int k) {
 		if (arr == null) {
 			return null;
