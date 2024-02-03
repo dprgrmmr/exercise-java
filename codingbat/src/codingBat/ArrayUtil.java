@@ -182,4 +182,8 @@ public class ArrayUtil {
 		}
 		return everywhere;
 	}
+	
+	public static int[] withoutTen(int[] arr) {
+		return null;
+	}
 }
