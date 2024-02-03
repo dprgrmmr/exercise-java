@@ -187,12 +187,7 @@ public class ArrayUtil {
 		int index = 0;
 		int[] newArr = new int[arr.length];
 		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] == 10) {
-				arr[i] = 0;
-			}
-		}
-		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] != 0) {
+			if (arr[i] != 10) {
 				newArr[index] = arr[i];
 				index++;
 			}
