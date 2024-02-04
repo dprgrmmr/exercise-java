@@ -183,11 +183,11 @@ public class ArrayUtil {
 		return everywhere;
 	}
 	
-	public static int[] withoutTen(int[] arr) {
+	public static int[] withoutK(int[] arr, int k) {
 		int index = 0;
 		int[] newArr = new int[arr.length];
 		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] != 10) {
+			if (arr[i] != k) {
 				newArr[index] = arr[i];
 				index++;
 			}
