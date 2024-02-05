@@ -12,7 +12,28 @@ public class withoutKTest {
 		Assertions.assertTrue(
 				Arrays.equals(
 						new int[] {1, 2, 3, 0, 0}, 
-						ArrayUtil.withoutTen(
-								new int[] {1, 2, 10, 3, 10})));
+						ArrayUtil.withoutK(
+								new int[] {1, 2, 10, 3, 10}, 10)
+						));
+	}
+	
+	@Test
+	public void withoutKReturnsArrayOfZerosWhenEveryElementIsK() {
+		Assertions.assertTrue(
+				Arrays.equals(
+						new int[] {0, 0, 0, 0, 0}, 
+						ArrayUtil.withoutK(
+								new int[] {1, 1, 1, 1, 1}, 1)
+						));
+	}
+	
+	@Test
+	public void withoutKReturnsInputArrayWhenKIsNotInArray() {
+		Assertions.assertTrue(
+				Arrays.equals(
+						new int[] {1, 2, 3, 4, 5}, 
+						ArrayUtil.withoutK(
+								new int[] {1, 2, 3, 4, 5}, 10)
+						));
 	}
 }
