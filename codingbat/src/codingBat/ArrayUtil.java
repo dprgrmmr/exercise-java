@@ -185,6 +185,12 @@ public class ArrayUtil {
 	
 	public static int[] withoutK(int[] arr, int k) {
 		int index = 0;
+		if (arr == null) {
+			return null;
+		}
+		if (arr.length == 0) {
+			return arr;
+		}
 		int[] newArr = new int[arr.length];
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] != k) {
