@@ -36,4 +36,24 @@ public class withoutKTest {
 								new int[] {1, 2, 3, 4, 5}, 10)
 						));
 	}
+	
+	@Test
+	public void withoutKReturnsNullWhenArrayIsNull() {
+		Assertions.assertTrue(
+				Arrays.equals(
+						null, 
+						ArrayUtil.withoutK(
+								null, 10)
+						));
+	}
+	
+	@Test
+	public void withoutKReturnsArrayWhenInputArrayIsEmpty() {
+		Assertions.assertTrue(
+				Arrays.equals(
+						new int[0], 
+						ArrayUtil.withoutK(
+								new int[0], 10)
+						));
+	}
 }
