@@ -45,6 +45,12 @@ public class ArrayUtil {
 		return rtRightPos.rotateRightK(arr, k);
 	}
 	
+	/**
+	 * <p>{@link rotateLeftK} rotates elements of the array left k times</p>
+	 * 
+	 * @param arr is input array
+	 * @return rotated array
+	 */
 	public static int[] rotateLeftK(int[] arr, int k) {
 		RotateRightK rtLeftNeg = new RotateRightK();
 		if (arr == null) {
