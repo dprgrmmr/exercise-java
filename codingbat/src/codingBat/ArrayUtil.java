@@ -206,4 +206,8 @@ public class ArrayUtil {
 		}
 		return newArr;
 	}
+	
+	public static boolean hasDoubleK(int[] arr, int k) {
+		return false;
+	}
 }
