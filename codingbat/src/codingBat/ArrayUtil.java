@@ -208,6 +208,14 @@ public class ArrayUtil {
 	}
 	
 	public static boolean hasDoubleK(int[] arr, int k) {
+		
+		if (arr == null) {
+			return false;
+		}
+		
+		if (arr.length < 2) {
+			return false;
+		}
 		for (int i = 0; i < arr.length - 1; i++) {
 			if (arr[i] == 2 && arr[i + 1] == 2) {
 				return true;
