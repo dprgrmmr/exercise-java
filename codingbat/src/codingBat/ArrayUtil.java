@@ -215,6 +215,14 @@ public class ArrayUtil {
 		return newArr;
 	}
 	
+	/**
+	 * {@link hasDoubleK} is a method that returns true if 
+	 * k appears at least twice in a row in the input array
+	 * 
+	 * @param arr is the input array 
+	 * @param k is the target number
+	 * @return true if "Double" condition matches
+	 */
 	public static boolean hasDoubleK(int[] arr, int k) {
 		
 		if (arr == null) {
