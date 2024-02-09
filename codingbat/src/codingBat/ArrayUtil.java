@@ -189,6 +189,14 @@ public class ArrayUtil {
 		return everywhere;
 	}
 	
+	/**
+	 * {@link withoutK} is a method that returns an array with 
+	 * with the input array's elements excluding elements that are k
+	 * 
+	 * @param arr is the input array 
+	 * @param k is the number to exclude
+	 * @return new array without k
+	 */
 	public static int[] withoutK(int[] arr, int k) {
 		int index = 0;
 		if (arr == null) {
