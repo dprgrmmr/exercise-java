@@ -1,7 +1,5 @@
 package codingBat;
 
-import java.util.Arrays;
-
 public class ArrayUtil {
 
 	public static int[] reverse(int[] arr) {
@@ -9,34 +7,34 @@ public class ArrayUtil {
 		if (arr == null) {
 			return null;
 		}
-		
+
 		if (arr.length == 0) {
 			return arr;
 		}
-		
+
 		int temp = 0;
 		for (int i = 0; i < arr.length / 2; i++) {
 			temp = arr[i];
 			arr[i] = arr[arr.length - 1 - i];
-			arr[arr.length -1 - i] = temp;
+			arr[arr.length - 1 - i] = temp;
 		}
 		return arr;
 	}
-	
+
 	public static int[] rotateK(int[] arr, int k) {
-		
+
 		if (arr == null) {
 			return null;
 		}
-		
+
 		if (arr.length == 0) {
 			return arr;
 		}
-		
+
 		if (k == 0) {
 			return arr;
 		}
-		
+
 		if (k < 0) {
 			RotateLeftK rtLeftNeg = new RotateLeftK();
 			return rtLeftNeg.rotateLeftK(arr, (0 - k));
@@ -44,9 +42,11 @@ public class ArrayUtil {
 		RotateRightK rtRightPos = new RotateRightK();
 		return rtRightPos.rotateRightK(arr, k);
 	}
-	
+
 	/**
-	 * <p>{@link rotateLeftK} rotates elements of the array left k times</p>
+	 * <p>
+	 * {@link rotateLeftK} rotates elements of the array left k times
+	 * </p>
 	 * 
 	 * @param arr is input array
 	 * @return rotated array
@@ -56,17 +56,17 @@ public class ArrayUtil {
 		if (arr == null) {
 			return null;
 		}
-		
+
 		if (arr.length == 0) {
 			return arr;
 		}
-		
+
 		if (k == 0) {
 			return arr;
 		}
-		
-	int[] result = new int[arr.length];
-	int j = k;
+
+		int[] result = new int[arr.length];
+		int j = k;
 		for (int i = 0; i < arr.length; i++) {
 			result[i] = arr[j];
 			j++;
@@ -76,9 +76,11 @@ public class ArrayUtil {
 		}
 		return result;
 	}
-	
+
 	/**
-	 * <p>{@link rotateRightK} rotates the elements in the array k times</p>
+	 * <p>
+	 * {@link rotateRightK} rotates the elements in the array k times
+	 * </p>
 	 * to the right
 	 * 
 	 * @param arr is input array
@@ -88,15 +90,15 @@ public class ArrayUtil {
 		if (arr == null) {
 			return null;
 		}
-		
+
 		if (arr.length == 0) {
 			return arr;
 		}
-		
+
 		if (k == 0) {
 			return arr;
 		}
-		
+
 		int[] result = new int[arr.length];
 		int j = k;
 		for (int i = 0; i < arr.length; i++) {
@@ -106,26 +108,28 @@ public class ArrayUtil {
 				j = 0;
 			}
 		}
-			return result;
+		return result;
 	}
-	
+
 	/**
-	 * <p>{@link max} finds the max number in the array</p>
+	 * <p>
+	 * {@link max} finds the max number in the array
+	 * </p>
 	 * 
 	 * @param arr is input array
 	 * @return maximum number
 	 */
 	public static int max(int[] arr) {
 		int max = Integer.MIN_VALUE;
-		
+
 		if (arr == null) {
 			throw new IllegalArgumentException("Array arr is null");
 		}
-		
+
 		if (arr.length == 0) {
 			max = 0;
 		}
-		
+
 		for (int i : arr) {
 			if (i > max) {
 				max = i;
@@ -133,52 +137,54 @@ public class ArrayUtil {
 		}
 		return max;
 	}
-	
+
 	/**
-	 * <p>{@link min} finds the min number in the array</p>
+	 * <p>
+	 * {@link min} finds the min number in the array
+	 * </p>
 	 * 
 	 * @param arr is input array
 	 * @return minimum number
 	 */
 	public static int min(int[] arr) {
-	int min = Integer.MAX_VALUE;
-	
-	if (arr == null) {
-		throw new IllegalArgumentException("Array arr is null");
-	}
-	
-	if (arr.length == 0) {
-		min = 0;
-	}
-	
-	for (int i : arr) {
-		if (i < min) {
-			min = i;
+		int min = Integer.MAX_VALUE;
+
+		if (arr == null) {
+			throw new IllegalArgumentException("Array arr is null");
+		}
+
+		if (arr.length == 0) {
+			min = 0;
+		}
+
+		for (int i : arr) {
+			if (i < min) {
+				min = i;
 			}
 		}
-	return min;
+		return min;
 	}
-	
+
 	/**
-	 * {@link isEverywhere} is a method that returns true if for
-	 * every consecutive pair of integers, num appears at least once
+	 * {@link isEverywhere} is a method that returns true if for every consecutive
+	 * pair of integers, num appears at least once
 	 * 
-	 * @param arr is the input array 
+	 * @param arr is the input array
 	 * @param num is the target number
 	 * @return true if "everywhere" condition matches
 	 */
 	public static boolean isEverywhere(int[] arr, int num) {
-		
+
 		if (arr == null) {
 			return false;
 		}
-		
+
 		if (arr.length <= 1) {
 			return false;
 		}
-		
+
 		boolean everywhere = true;
-		
+
 		for (int i = 0; i < arr.length - 1; i++) {
 			System.out.println(arr[i]);
 			if (arr[i] != num && arr[i + 1] != num) {
@@ -188,13 +194,13 @@ public class ArrayUtil {
 		}
 		return everywhere;
 	}
-	
+
 	/**
-	 * {@link withoutK} is a method that returns an array with 
-	 * with the input array's elements excluding elements that are k
+	 * {@link withoutK} is a method that returns an array with with the input
+	 * array's elements excluding elements that are k
 	 * 
-	 * @param arr is the input array 
-	 * @param k is the number to exclude
+	 * @param arr is the input array
+	 * @param k   is the number to exclude
 	 * @return new array without k
 	 */
 	public static int[] withoutK(int[] arr, int k) {
@@ -214,21 +220,21 @@ public class ArrayUtil {
 		}
 		return newArr;
 	}
-	
+
 	/**
-	 * {@link hasDoubleK} is a method that returns true if 
-	 * k appears at least twice in a row in the input array
+	 * {@link hasDoubleK} is a method that returns true if k appears at least twice
+	 * in a row in the input array
 	 * 
-	 * @param arr is the input array 
-	 * @param k is the target number
+	 * @param arr is the input array
+	 * @param k   is the target number
 	 * @return true if "Double" condition matches
 	 */
 	public static boolean hasDoubleK(int[] arr, int k) {
-		
+
 		if (arr == null) {
 			return false;
 		}
-		
+
 		if (arr.length < 2) {
 			return false;
 		}
@@ -239,8 +245,21 @@ public class ArrayUtil {
 		}
 		return false;
 	}
-	
+
 	public static int[] preK(int[] arr, int k) {
-		return null;
+		int indexFour = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == 4) {
+				indexFour = i;
+				for (int j = i; j < arr.length; j++) {
+					arr[j] = 0;
+				}
+			}
+		}
+		int[] newArr = new int[indexFour];
+		for (int i = 0; i < indexFour; i++) {
+			newArr[i] = arr[i];
+		}
+		return newArr;
 	}
 }
