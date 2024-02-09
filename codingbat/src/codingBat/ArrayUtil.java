@@ -239,4 +239,8 @@ public class ArrayUtil {
 		}
 		return false;
 	}
+	
+	public static int[] preK(int[] arr, int k) {
+		return null;
+	}
 }
