@@ -1,7 +1,15 @@
 package codingBat;
 
 public class ArrayUtil {
-
+	
+	  /**
+		 * <p>
+		 * {@link reverse} reverses array
+		 * </p>
+	         *
+		 * @param arr is input array
+		 * @return reversed array
+		 */
 	public static int[] reverse(int[] arr) {
 
 		if (arr == null) {
@@ -21,6 +29,15 @@ public class ArrayUtil {
 		return arr;
 	}
 
+	/**
+	 * <p>
+	 * {@link rotateK} rotates elements of the array left or right k times
+	 * </p>
+	 * 
+	 * @param arr is input array
+         * @param k is number of times rotated
+	 * @return if k >= 0 then rotate right i, if k <= 0 then rotate left
+	 */
 	public static int[] rotateK(int[] arr, int k) {
 
 		if (arr == null) {
