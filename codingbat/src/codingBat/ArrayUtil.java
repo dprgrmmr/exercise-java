@@ -248,6 +248,16 @@ public class ArrayUtil {
 
 	public static int[] preK(int[] arr, int k) {
 		int indexFour = 0;
+		
+		if(arr == null) {
+			return null;
+		}
+		
+		if (arr.length < 1) {
+			return arr;
+		}
+		
+
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == 4) {
 				indexFour = i;
