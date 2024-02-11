@@ -1,15 +1,15 @@
 package codingBat;
 
 public class ArrayUtil {
-	
-	  /**
-		 * <p>
-		 * {@link reverse} reverses array
-		 * </p>
-	         *
-		 * @param arr is input array
-		 * @return reversed array
-		 */
+
+         /**
+	 * <p>
+	 * {@link reverse} reverses array
+	 * </p>
+         *
+	 * @param arr is input array
+	 * @return reversed array
+	 */
 	public static int[] reverse(int[] arr) {
 
 		if (arr == null) {
@@ -265,16 +265,6 @@ public class ArrayUtil {
 
 	public static int[] preK(int[] arr, int k) {
 		int indexFour = 0;
-		
-		if(arr == null) {
-			return null;
-		}
-		
-		if (arr.length < 1) {
-			return arr;
-		}
-		
-
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == 4) {
 				indexFour = i;
