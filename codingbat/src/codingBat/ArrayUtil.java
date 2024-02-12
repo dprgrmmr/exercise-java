@@ -263,18 +263,24 @@ public class ArrayUtil {
 		return false;
 	}
 
+	/**
+	 * {@link preK} is a method that returns a new array with
+	 * all elements that come before the first instance of k
+	 * 
+	 * @param arr is the input array
+	 * @param k   is the target number
+	 * @return new array
+	 */
 	public static int[] preK(int[] arr, int k) {
-		int indexFour = 0;
+		int indexOfK = 0;
 		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] == 4) {
-				indexFour = i;
-				for (int j = i; j < arr.length; j++) {
-					arr[j] = 0;
-				}
+			if (arr[i] == k) {
+				indexOfK = i;
+				break;
 			}
 		}
-		int[] newArr = new int[indexFour];
-		for (int i = 0; i < indexFour; i++) {
+		int[] newArr = new int[indexOfK];
+		for (int i = 0; i < indexOfK; i++) {
 			newArr[i] = arr[i];
 		}
 		return newArr;
