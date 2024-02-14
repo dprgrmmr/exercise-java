@@ -285,4 +285,8 @@ public class ArrayUtil {
 		}
 		return newArr;
 	}
+	
+	public static int[] countEvens(int[] arr) {
+		return arr;
+	}
 }
