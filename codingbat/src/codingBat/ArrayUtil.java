@@ -286,6 +286,13 @@ public class ArrayUtil {
 		return newArr;
 	}
 	
+	/**
+	 * {@link countEvens} is a method that counts the number of
+	 * even integers in an array
+	 * 
+	 * @param arr is the input array
+	 * @return number of even integers
+	 */
 	public static int countEvens(int[] arr) {
 		
 		if (arr == null) {
