@@ -311,7 +311,20 @@ public class ArrayUtil {
 		return count;
 	}
 	
-	public static boolean noK(int[] arr) {
-		return false;
+	public static boolean noK(int[] arr, int k) {
+		
+		if (arr == null) {
+			return false;
+		}
+		
+		if (arr.length < 1) {
+			return true;
+		}
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == k) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
