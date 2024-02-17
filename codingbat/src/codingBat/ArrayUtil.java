@@ -310,4 +310,8 @@ public class ArrayUtil {
 		}
 		return count;
 	}
+	
+	public static boolean noK(int[] arr) {
+		return false;
+	}
 }
