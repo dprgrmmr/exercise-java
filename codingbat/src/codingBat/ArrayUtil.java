@@ -322,7 +322,7 @@ public class ArrayUtil {
 	public static boolean noK(int[] arr, int k) {
 		
 		if (arr == null) {
-			return false;
+			return true;
 		}
 		
 		if (arr.length == 0) {
