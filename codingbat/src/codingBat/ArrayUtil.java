@@ -311,13 +311,21 @@ public class ArrayUtil {
 		return count;
 	}
 	
+	/**
+	 * {@link noK} is a method that checks for if the integer k
+	 * is not found in the array
+	 * 
+	 * @param arr is the input array
+	 * @param k is the target number
+	 * @return true if k is not found in the array
+	 */
 	public static boolean noK(int[] arr, int k) {
 		
 		if (arr == null) {
 			return false;
 		}
 		
-		if (arr.length < 1) {
+		if (arr.length == 0) {
 			return true;
 		}
 		for (int i = 0; i < arr.length; i++) {
