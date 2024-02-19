@@ -337,6 +337,22 @@ public class ArrayUtil {
 	}
 	
 	public static int sumK(int[] arr, int k) {
-		return 0;
+		
+		if (arr == null) {
+			return 0;
+		}
+		
+		if (arr.length == 0) {
+			return 0;
+		}
+		
+		int sum = 0;
+	
+		for (int i = 0; i < arr.length; i++) {
+			if (i == k) {
+				sum += arr[i];
+			}
+		}
+		return sum;
 	}
 }
