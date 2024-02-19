@@ -335,4 +335,8 @@ public class ArrayUtil {
 		}
 		return true;
 	}
+	
+	public static int sumK(int[] arr, int k) {
+		return 0;
+	}
 }
