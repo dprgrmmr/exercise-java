@@ -336,6 +336,14 @@ public class ArrayUtil {
 		return true;
 	}
 	
+	/**
+	 * {@link sumK} is a method that adds up every instance of
+	 * k found in the array
+	 * 
+	 * @param arr is the input array
+	 * @param k is the target number
+	 * @return sum of all k's in the array
+	 */
 	public static int sumK(int[] arr, int k) {
 		
 		if (arr == null) {
