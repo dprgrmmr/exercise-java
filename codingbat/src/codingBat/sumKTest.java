@@ -16,16 +16,16 @@ public class sumKTest {
 	@Test 
 	public void sumKNullArrayReturnsZero() {
 		Assertions.assertEquals(
-				6, 
+				0, 
 				ArrayUtil.sumK(
-						new int[] {2, 14, 6, 2, 7, 2}, 2));
+						null, 3));
 	}
 	
 	@Test 
 	public void sumKEmptyArrayReturnsZero() {
 		Assertions.assertEquals(
-				6, 
+				0, 
 				ArrayUtil.sumK(
-						new int[] {2, 14, 6, 2, 7, 2}, 2));
+						new int[0], 2));
 	}
 }
