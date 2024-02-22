@@ -363,4 +363,24 @@ public class ArrayUtil {
 		}
 		return sum;
 	}
+	
+	public static boolean kUp(int[] arr, int k) {
+		
+		if (arr == null) {
+			return false;
+		}
+		
+		if (arr.length < k) {
+			return false;
+		}
+		
+		for (int i = 0; i <= arr.length - k; i++) {
+			for (int j = 1; j < k; j++) {
+				if (arr[i + j] == arr[i + j - 1] + 1) {
+					return true;
+				}
+			}
+			return false;
+		}
+	}
 }
