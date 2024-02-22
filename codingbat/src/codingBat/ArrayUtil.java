@@ -375,10 +375,14 @@ public class ArrayUtil {
 		}
 		
 		for (int i = 0; i <= arr.length - k; i++) {
+			int count = 0;
 			for (int j = 1; j < k; j++) {
 				if (arr[i + j] == arr[i + j - 1] + 1) {
-					return true;
+					count++;
 				}
+			}
+			if (count == k - 1) {
+				return true;
 			}
 		}
 		return false;
