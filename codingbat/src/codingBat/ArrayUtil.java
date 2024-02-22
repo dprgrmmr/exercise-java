@@ -380,7 +380,7 @@ public class ArrayUtil {
 					return true;
 				}
 			}
-			return false;
 		}
+		return false;
 	}
 }
