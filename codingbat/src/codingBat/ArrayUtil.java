@@ -364,6 +364,14 @@ public class ArrayUtil {
 		return sum;
 	}
 	
+	/**
+	 * {@link kUp} is a method that determines whether there are
+	 * k amount of consecutive integers in the array
+	 * 
+	 * @param arr is the input array
+	 * @param k is the number of consecutive integers
+	 * @return true if the array has k consecutive integers and false otherwise
+	 */
 	public static boolean kUp(int[] arr, int k) {
 		
 		if (arr == null) {
