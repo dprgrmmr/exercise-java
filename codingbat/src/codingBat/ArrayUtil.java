@@ -395,4 +395,26 @@ public class ArrayUtil {
 		}
 		return false;
 	}
+	
+	public static int matchUp(int[] arr, int[] arr2) {
+		
+		if (arr == null || arr2 == null) {
+			return 0;
+		}
+		
+		if (arr.length != arr2.length) {
+			return 0;
+		}
+		
+		if (arr.length == 0) {
+			return 0;
+		}
+		int count = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] != arr2[i]) {
+				count++;
+			}
+		}
+		return count;
+	}
 }
