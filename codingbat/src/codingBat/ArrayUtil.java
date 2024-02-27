@@ -396,6 +396,14 @@ public class ArrayUtil {
 		return false;
 	}
 	
+	/**
+	 * {@link matchUp} is a method that returns the amount of differences
+	 * between two integer arrays of equal length
+	 * 
+	 * @param arr is the input array
+	 * @param arr2 is the second input array
+	 * @return the number of differences between arr and arr2
+	 */
 	public static int matchUp(int[] arr, int[] arr2) {
 		
 		if (arr == null || arr2 == null) {
