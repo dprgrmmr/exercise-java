@@ -427,6 +427,18 @@ public class ArrayUtil {
 	}
 	
 	public int bigDiff(int[] arr) {
+		
+		if (arr == null) {
+			return 0;
+		}
+		
+		if (arr.length == 0) {
+			return 0;
+		}
+		
+		if (arr.length == 1) {
+			return arr[0];
+		}
 		  int max = 0;
 		  int min = 100;
 		  for (int i = 0; i < arr.length; i++) {
