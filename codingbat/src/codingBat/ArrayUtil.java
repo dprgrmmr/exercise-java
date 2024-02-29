@@ -425,4 +425,14 @@ public class ArrayUtil {
 		}
 		return count;
 	}
+	
+	public int bigDiff(int[] arr) {
+		  int max = 0;
+		  int min = 100;
+		  for (int i = 0; i < arr.length; i++) {
+		    max = Math.max(max, arr[i]);
+		    min = Math.min(min, arr[i]);
+		  }
+		  return max - min;
+		}
 }
