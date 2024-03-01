@@ -426,6 +426,13 @@ public class ArrayUtil {
 		return count;
 	}
 	
+	/**
+	 * {@link bigDiff} is a method that returns difference between
+	 * the largest and smallest number in an integer array
+	 * 
+	 * @param arr is the input array
+	 * @return the number of differences between largest and smallest element
+	 */
 	public int bigDiff(int[] arr) {
 		
 		if (arr == null) {
