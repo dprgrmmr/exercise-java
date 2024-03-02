@@ -433,7 +433,7 @@ public class ArrayUtil {
 	 * @param arr is the input array
 	 * @return the number of differences between largest and smallest element
 	 */
-	public int bigDiff(int[] arr) {
+	public static int bigDiff(int[] arr) {
 		
 		if (arr == null) {
 			return 0;
