@@ -454,4 +454,25 @@ public class ArrayUtil {
 		  }
 		  return max - min;
 		}
+	
+	public static boolean modK(int[] arr, int k) {
+		if (arr.length < k) {
+			return false;
+		}
+		for (int i = 0; i <= arr.length - k; i++) {
+			int countOdd = 0;
+			int countEven = 0;
+			for (int j = 0; j < k; j++) {
+				if (arr[i + j] % 2 == 0) {
+					countEven++;
+				} else {
+					countOdd++;
+				}
+			}
+			if (countEven == k || countOdd == k) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
