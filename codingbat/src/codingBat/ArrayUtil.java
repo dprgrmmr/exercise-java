@@ -456,9 +456,15 @@ public class ArrayUtil {
 		}
 	
 	public static boolean modK(int[] arr, int k) {
+		
+		if (arr == null) {
+			return false;
+		}
+		
 		if (arr.length < k) {
 			return false;
 		}
+		
 		for (int i = 0; i <= arr.length - k; i++) {
 			int countOdd = 0;
 			int countEven = 0;
