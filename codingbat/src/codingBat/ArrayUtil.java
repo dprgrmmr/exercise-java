@@ -455,6 +455,14 @@ public class ArrayUtil {
 		  return max - min;
 		}
 	
+	/**
+	 * {@link modK} is a method that returns true if
+	 * the input array contains k even or odd consecutive integers
+	 * 
+	 * @param arr is the input array
+	 * @param k is the target number
+	 * @return true if the input array contains k even or odd consecutive integers and false otherwise
+	 */
 	public static boolean modK(int[] arr, int k) {
 		
 		if (arr == null) {
