@@ -473,19 +473,24 @@ public class ArrayUtil {
 			return false;
 		}
 		
-		for (int i = 0; i <= arr.length - k; i++) {
+		for (int i = 0; i < arr.length - 1; i++) {
 			int countOdd = 0;
 			int countEven = 0;
-			for (int j = 0; j < k; j++) {
-				if (arr[i + j] % 2 == 0) {
+				if (arr[i + 1] % 2 == 0 && arr[i] % 2 == 0) {
 					countEven++;
-				} else {
+					if (countEven == k) {
+						return true;
+					}
+				} else if (arr[i + 1] % 2 != 0 && arr[i] % 2 != 0){
 					countOdd++;
+					if (countOdd == k) {
+						return true;
+					}
 				}
-			}
-			if (countEven == k || countOdd == k) {
-				return true;
-			}
+				else {
+					countEven = 0;
+					countOdd = 0;
+				}
 		}
 		return false;
 	}
