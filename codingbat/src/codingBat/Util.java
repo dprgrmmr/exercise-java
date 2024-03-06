@@ -20,6 +20,12 @@ public class Util {
 			changeStr(str, "null");
 		}
 		
-		return str;
+		if (str.length() == 0){
+			return "";
+		}
+			  if (str.substring(0, str2.length()).equals(str2)){
+			  return str2 + changeStr(str.substring(str2.length()), str2);
+			  }
+			  return str.substring(0,1) + changeStr(str.substring(1), str2);
 	}
 }
