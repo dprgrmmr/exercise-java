@@ -15,17 +15,17 @@ public class Util {
 		if (str == null) {
 			return str;
 		}
-		
+
 		if (str2 == null) {
 			changeStr(str, "null");
 		}
-		
-		if (str.length() == 0){
+
+		if (str.length() == 0) {
 			return "";
 		}
-			  if (str.substring(0, str2.length()).equals(str2)){
-			  return str2 + changeStr(str.substring(str2.length()), str2);
-			  }
-			  return str.substring(0,1) + changeStr(str.substring(1), str2);
+		if (str.substring(0, str2.length()).equals(str2)) {
+			return str2 + changeStr(str.substring(str2.length()), str2);
+		}
+		return str.substring(0, 1) + changeStr(str.substring(1), str2);
 	}
 }
