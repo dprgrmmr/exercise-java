@@ -28,4 +28,11 @@ public class Util {
 		}
 		return str.substring(0, 1) + changeStr(str.substring(1), str2);
 	}
+	
+	public static String seqTwo(int start, int end) {
+		if (end < start) {
+			return "";
+		}
+		return seq(end -1) + end + "\r\n";
+	}
 }
