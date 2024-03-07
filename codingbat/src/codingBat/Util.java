@@ -2,6 +2,13 @@ package codingBat;
 
 public class Util {
 
+	/**
+	 * {@link seq} is a method that returns numbers from one to n
+	 * each on a new line
+	 * 
+	 * @param n is the start number
+	 * @return numbers from one to n
+	 */
 	public static String seq(int n) {
 		
 		if (n < 1) {
@@ -10,6 +17,15 @@ public class Util {
 		return seq(n-1) + n + "\r\n";
 	}
 	
+	/**
+	 * {@link changeStr} is a method that returns the input String with all
+	 * appearances of str2 replaced with str3
+	 * 
+	 * @param str is the main string
+	 * @param str2 is the string being replaced
+	 * @param str3 is the string replacing str2
+	 * @return main string with instances of str2 replaced with str3
+	 */
 	public static String changeStr(String str, String str2, String str3) {
 		
 		if (str == null) {
