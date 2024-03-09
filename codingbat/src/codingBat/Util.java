@@ -49,7 +49,14 @@ public class Util {
 		return str.substring(0, 1) + changeStr(str.substring(1), str2, str3);
 	}
 	
-	
+	/**
+	 * {@link seq} is a method that returns numbers from start to end
+	 * each on a new line
+	 * 
+	 * @param start is the start number
+	 * @param end is the end number
+	 * @return numbers from start to end
+	 */
 	public static String seqTwo(int start, int end) {
 		if (end < start) {
 			return "";
