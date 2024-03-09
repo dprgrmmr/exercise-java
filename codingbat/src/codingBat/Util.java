@@ -50,7 +50,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link seq} is a method that returns numbers from start to end
+	 * {@link seqTwo} is a method that returns numbers from start to end
 	 * each on a new line
 	 * 
 	 * @param start is the start number
