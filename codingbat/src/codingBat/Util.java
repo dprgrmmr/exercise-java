@@ -61,6 +61,6 @@ public class Util {
 		if (end < start) {
 			return "";
 		}
-		return seq(end -1) + end + "\r\n";
+		return seqTwo(start, end -1) + end + "\r\n";
 	}
 }
