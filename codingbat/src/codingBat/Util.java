@@ -66,9 +66,21 @@ public class Util {
 	
 	public static int countKey(String str, String key) {
 
-			  if (str.substring(str.length() - key.length(), str.length()).equals(key)){
-			  return 1 + countKey(str.substring(0, str.length() - 1), key);
-			  }
-			  return countKey(str.substring(0, str.length() - 1), key);
+		if (str == null) {
+			return 0;
+		}
+
+		if (key == null) {
+			return countKey(str, "null");
+		}
+
+		if (str.length() < key.length()) {
+			return 0;
+		}
+		
+		if (str.substring(str.length() - key.length(), str.length()).equals(key)) {
+			return 1 + countKey(str.substring(0, str.length() - 1), key);
+		}
+		return countKey(str.substring(0, str.length() - 1), key);
 	}
 }
