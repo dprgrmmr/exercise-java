@@ -63,4 +63,12 @@ public class Util {
 		}
 		return seqTwo(start, end -1) + end + "\r\n";
 	}
+	
+	public static int countKey(String str, String key) {
+
+			  if (str.substring(str.length() - key.length(), str.length()).equals(key)){
+			  return 1 + countKey(str.substring(0, str.length() - 1), key);
+			  }
+			  return countKey(str.substring(0, str.length() - 1), key);
+	}
 }
