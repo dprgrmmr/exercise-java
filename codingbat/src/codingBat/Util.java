@@ -64,6 +64,14 @@ public class Util {
 		return seqTwo(start, end -1) + end + "\r\n";
 	}
 	
+	/**
+	 * {@link countKey} is a method that returns the number of times
+	 * the string key is found in the string str
+	 * 
+	 * @param str is the input string
+	 * @param key is the target string
+	 * @return number of times key appears in str
+	 */
 	public static int countKey(String str, String key) {
 
 		if (str == null) {
