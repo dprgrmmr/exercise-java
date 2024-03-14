@@ -91,4 +91,17 @@ public class Util {
 		}
 		return countKey(str.substring(0, str.length() - 1), key);
 	}
+	
+	public static int fibonacciK(int k) {
+		  
+		  if (k == 0){
+		    return 0;
+		  }
+		  
+		  if (k == 1){
+		    return 1;
+		  }
+		  
+		  return fibonacciK(k - 1) + fibonacciK(k - 2);
+	}
 }
