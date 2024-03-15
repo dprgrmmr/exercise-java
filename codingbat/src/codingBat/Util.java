@@ -92,6 +92,13 @@ public class Util {
 		return countKey(str.substring(0, str.length() - 1), key);
 	}
 	
+	/**
+	 * {@link fibonnaciK} is a method that returns the kth number of
+	 * the fibonacci sequence
+	 * 
+	 * @param k is the target number 
+	 * @return the kth fibonnaci number
+	 */
 	public static int fibonacciK(int k) {
 		  
 		  if (k == 0){
