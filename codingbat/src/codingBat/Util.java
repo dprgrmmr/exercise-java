@@ -113,6 +113,15 @@ public class Util {
 	}
 	
 	public static String cleanString(String str) {
+		
+		if (str == null) {
+			return "null";
+		}
+		
+		if (str.length() == 0) {
+			return str;
+		}
+		
 		  if (str.length() == 1){
 			    return str;
 			  }
