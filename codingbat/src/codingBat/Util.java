@@ -112,6 +112,13 @@ public class Util {
 		  return fibonacciK(k - 1) + fibonacciK(k - 2);
 	}
 	
+	/**
+	 * {@link cleanString} is a method that returns the input String
+	 * without any consecutive duplicate elements
+	 * 
+	 * @param str is the input String
+	 * @return str without any consecutive duplicate elements
+	 */
 	public static String cleanString(String str) {
 		
 		if (str == null) {
