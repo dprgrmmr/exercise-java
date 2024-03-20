@@ -137,4 +137,12 @@ public class Util {
 			  }
 			  return str.substring(0,1) + cleanString(str.substring(1));
 	}
+	
+	public static int powerK(int base, int k) {
+		
+		if (k <= 1) {
+			return base;
+		}
+		return base * powerK(base, (k - 1));
+	}
 }
