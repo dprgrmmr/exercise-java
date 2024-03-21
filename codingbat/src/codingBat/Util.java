@@ -138,6 +138,15 @@ public class Util {
 			  return str.substring(0,1) + cleanString(str.substring(1));
 	}
 	
+	
+	/**
+	 * {@link powerK} is a method that returns the base integer
+	 * to the kth power
+	 * 
+	 * @param base is the input integer
+	 * @param k is the exponent number
+	 * @return base to the kth power
+	 */
 	public static int powerK(int base, int k) {
 		
 		if (k <= 1) {
