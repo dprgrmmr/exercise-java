@@ -149,7 +149,11 @@ public class Util {
 	 */
 	public static int powerK(int base, int k) {
 		
-		if (k <= 1) {
+		if (k == 0) {
+			return 1;
+		}
+		
+		if (k == 1) {
 			return base;
 		}
 		return base * powerK(base, (k - 1));
