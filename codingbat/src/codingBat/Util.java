@@ -158,4 +158,26 @@ public class Util {
 		}
 		return base * powerK(base, (k - 1));
 	}
+	
+	public static String noKey(String str, String key) {
+		
+		if (str == null) {
+			return null;
+		}
+		
+		if (key == null) {
+			return str;
+		}
+		
+		if (str.length() == 0) {
+			return str;
+		}
+		  if (key.length() == 0){
+			    return "";
+			  }
+			  if (str.substring(0, key.length()).equals(key)){
+			  return noKey(str.substring(key.length()), key);
+			  }
+			  return str.substring(0,1) + noKey(str.substring(1), key);
+			}
 }
