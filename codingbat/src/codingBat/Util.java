@@ -159,6 +159,14 @@ public class Util {
 		return base * powerK(base, (k - 1));
 	}
 	
+	/**
+	 * {@link noKey} is a method that returns the input String with all
+	 * instances of key removed
+	 * 
+	 * @param str is the input String
+	 * @param key is the target String
+	 * @return input String with all instances of key removed
+	 */
 	public static String noKey(String str, String key) {
 		
 		if (str == null) {
