@@ -181,7 +181,7 @@ public class Util {
 			return str;
 		}
 		  if (key.length() == 0){
-			    return "";
+			    return str;
 			  }
 			  if (str.substring(0, key.length()).equals(key)){
 			  return noKey(str.substring(key.length()), key);
