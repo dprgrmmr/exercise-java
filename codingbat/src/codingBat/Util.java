@@ -188,4 +188,12 @@ public class Util {
 			  }
 			  return str.substring(0,1) + noKey(str.substring(1), key);
 			}
+	
+	public static int sumDigits(int n) {
+		
+			  if (n / 10 == 0){
+			    return n;
+			  }
+			    return (n % 10) + sumDigits(n / 10);
+	}
 }
