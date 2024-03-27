@@ -189,6 +189,13 @@ public class Util {
 			  return str.substring(0,1) + noKey(str.substring(1), key);
 			}
 	
+	/**
+	 * {@link sumDigits} is a method that returns the sum of all the digits
+	 * in the input number
+	 * 
+	 * @param n is the input Integer
+	 * @return the sum of all the digits that make up the input number
+	 */
 	public static int sumDigits(int n) {
 		
 			  if (n / 10 == 0){
