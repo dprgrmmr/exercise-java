@@ -203,4 +203,25 @@ public class Util {
 			  }
 			    return (n % 10) + sumDigits(n / 10);
 	}
+	
+	public static String pairK(String str, String k) {
+		
+		if (str == null) {
+			return null;
+		}
+		
+		if (k == null) {
+			return pairK(str, "null");
+		}
+		
+		if (str.length() <= 1) {
+			return str;
+		}
+
+		if (str.substring(0, 1).equals(str.substring(1, 2))) {
+			return str.substring(0, 1) + k + pairK(str.substring(1), k);
+		}
+
+		return str.substring(0, 1) + pairK(str.substring(1), k);
+	}
 }
