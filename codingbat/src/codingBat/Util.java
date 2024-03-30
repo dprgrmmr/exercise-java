@@ -204,6 +204,16 @@ public class Util {
 			    return (n % 10) + sumDigits(n / 10);
 	}
 	
+	/**
+	 * {@link pairK} is a method that adds a custom String in between pairs of 
+	 * duplicate elements in a String
+	 * 
+	 * @param str is the input String
+	 * @param k is the target String
+	 * 
+	 * @return the input String with the target String added in between
+	 * consecutive duplicate elements
+	 */
 	public static String pairK(String str, String k) {
 		
 		if (str == null) {
