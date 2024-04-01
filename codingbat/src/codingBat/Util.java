@@ -234,4 +234,20 @@ public class Util {
 
 		return str.substring(0, 1) + pairK(str.substring(1), k);
 	}
+	
+	public static String allK(String str, String k) {
+		
+		if (str == null) {
+			return null;
+		}
+		
+		if (k == null) {
+			return pairK(str, "null");
+		}
+		
+		 if (str.length() <= 1){
+			    return str;
+			  }
+			  return str.substring(0,1) + k + allK(str.substring(1), k);
+	}
 }
