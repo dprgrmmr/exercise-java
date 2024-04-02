@@ -235,6 +235,15 @@ public class Util {
 		return str.substring(0, 1) + pairK(str.substring(1), k);
 	}
 	
+	/**
+	 * {@link allK} is a method that adds a custom String in between every character
+	 * in an input String
+	 * 
+	 * @param str is the input String
+	 * @param k is the target String
+	 * 
+	 * @return the input String with the target String added in between every character
+	 */
 	public static String allK(String str, String k) {
 		
 		if (str == null) {
