@@ -251,7 +251,7 @@ public class Util {
 		}
 		
 		if (k == null) {
-			return pairK(str, "null");
+			return str;
 		}
 		
 		 if (str.length() <= 1){
