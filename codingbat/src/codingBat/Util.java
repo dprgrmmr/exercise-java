@@ -259,4 +259,23 @@ public class Util {
 			  }
 			  return str.substring(0,1) + k + allK(str.substring(1), k);
 	}
+	
+	public static int arrayK(int[] nums, int k, int index) {
+		
+		if (nums.length == 0) {
+			return 0;
+		}
+
+		if (index > nums.length) {
+			return 0;
+		}
+
+		if (index < nums.length) {
+
+			if (nums[index] == k) {
+				return 1 + arrayK(nums, k, index + 1);
+			}
+		}
+		return arrayK(nums, k, index + 1);
+	}
 }
