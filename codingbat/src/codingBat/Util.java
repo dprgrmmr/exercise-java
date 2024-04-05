@@ -260,6 +260,16 @@ public class Util {
 			  return str.substring(0,1) + k + allK(str.substring(1), k);
 	}
 	
+	/**
+	 * {@link arrayK} is a method that counts the number of times an integer appears
+	 * in an array of integers after a certain index
+	 * 
+	 * @param nums is the input array of integers
+	 * @param k is the target integer
+	 * @param index is the starting index
+	 * 
+	 * @return the amount of times the integer k appears in nums after a certain index
+	 */
 	public static int arrayK(int[] nums, int k, int index) {
 		
 		if (nums.length == 0) {
