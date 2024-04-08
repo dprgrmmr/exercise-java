@@ -290,6 +290,11 @@ public class Util {
 	}
 	
 	public int countPairs(String str) {
+		
+		if (str == null) {
+			return 0;
+		}
+		
 		  if (str.length() <=2){
 		    return 0;
 		  }
