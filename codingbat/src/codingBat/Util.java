@@ -289,6 +289,14 @@ public class Util {
 		return arrayK(nums, k, index + 1);
 	}
 	
+	/**
+	 * {@link countPairs} is a method that counts the number of pairs made of duplicate characters
+	 * in a String separated by another character
+	 * 
+	 * @param str is the input String
+	 * 
+	 * @return the amount of "pairs" found in a String
+	 */
 	public int countPairs(String str) {
 		
 		if (str == null) {
