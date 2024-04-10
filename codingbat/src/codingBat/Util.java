@@ -313,4 +313,25 @@ public class Util {
 		}
 		return countPairs(str.substring(1));
 	}
+
+	public String endK(String str, String k) {
+
+		if (str == null) {
+			return null;
+		}
+
+		if (k == null) {
+			return str;
+		}
+
+		if (str.length() == 0) {
+			return "";
+		}
+
+		if (str.substring(0, 1).equals(k)) {
+			return endK(str.substring(1), k) + k;
+		}
+
+		return str.substring(0, 1) + endK(str.substring(1), k);
+	}
 }
