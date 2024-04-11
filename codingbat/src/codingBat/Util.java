@@ -314,6 +314,15 @@ public class Util {
 		return countPairs(str.substring(1));
 	}
 
+	/**
+	 * {@link endK} is a method that moves all instances of a specified String
+	 * in an input String to the end of the input String
+	 * 
+	 * @param str is the input String
+	 * @param k is the target String
+	 * 
+	 * @return the input String with all instances of k moved to the end
+	 */
 	public String endK(String str, String k) {
 
 		if (str == null) {
