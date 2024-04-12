@@ -323,7 +323,7 @@ public class Util {
 	 * 
 	 * @return the input String with all instances of k moved to the end
 	 */
-	public String endK(String str, String k) {
+	public static String endK(String str, String k) {
 
 		if (str == null) {
 			return null;
