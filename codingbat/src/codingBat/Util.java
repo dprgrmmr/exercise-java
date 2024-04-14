@@ -297,7 +297,7 @@ public class Util {
 	 * 
 	 * @return the amount of "pairs" found in a String
 	 */
-	public int countPairs(String str) {
+	public static int countPairs(String str) {
 		
 		if (str == null) {
 			return 0;
