@@ -343,4 +343,11 @@ public class Util {
 
 		return str.substring(0, 1) + endK(str.substring(1), k);
 	}
+
+	public static int triangle(int rows) {
+		if (rows == 0) {
+			return 0;
+		}
+		return rows + triangle(rows - 1);
+	}
 }
