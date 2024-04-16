@@ -344,6 +344,15 @@ public class Util {
 		return str.substring(0, 1) + endK(str.substring(1), k);
 	}
 
+	/**
+	 * {@link triangle} is a method that determines the amount of squares
+	 * that make up a triangle given that the first row has one square
+	 * second row has two, third row has three, and so on.
+	 * 
+	 * @param rows is the number of rows in the triangle
+	 * 
+	 * @return the amount of squares that make up a specific triangle
+	 */
 	public static int triangle(int rows) {
 		if (rows == 0) {
 			return 0;
