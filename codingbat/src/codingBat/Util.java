@@ -354,9 +354,11 @@ public class Util {
 	 * @return the amount of squares that make up a specific triangle
 	 */
 	public static int triangle(int rows) {
-		if (rows == 0) {
+		
+		if (rows <= 0) {
 			return 0;
 		}
+		
 		return rows + triangle(rows - 1);
 	}
 }
