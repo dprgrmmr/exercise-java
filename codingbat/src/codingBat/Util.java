@@ -361,4 +361,18 @@ public class Util {
 		
 		return rows + triangle(rows - 1);
 	}
+	
+	public static int countN(int num, int n) {
+		int count = 0;
+		
+		  if (num < n){
+		    return 0;
+		  }
+		  
+		  if (num % 10 == n){
+		    return countN(n/10, n) + 1;
+		  }
+		  
+		  return countN(n/10, n);
+	}
 }
