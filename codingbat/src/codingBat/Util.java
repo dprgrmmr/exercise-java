@@ -362,6 +362,15 @@ public class Util {
 		return rows + triangle(rows - 1);
 	}
 	
+	/**
+	 * {@link countN} is a method that determines the amount of times
+	 * a specific number appears as a digit in an input number
+	 * 
+	 * @param num is the input number
+	 * @param n is the target number
+	 * 
+	 * @return the amount of times n appears as a digit in num
+	 */
 	public static int countN(int num, int n) {
 		int count = 0;
 		
