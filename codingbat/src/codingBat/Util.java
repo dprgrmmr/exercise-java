@@ -379,9 +379,9 @@ public class Util {
 		  }
 		  
 		  if (num % 10 == n){
-		    return countN(n/10, n) + 1;
+		    return countN(num/10, n) + 1;
 		  }
 		  
-		  return countN(n/10, n);
+		  return countN(num/10, n);
 	}
 }
