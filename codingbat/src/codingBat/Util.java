@@ -384,4 +384,13 @@ public class Util {
 		  
 		  return countN(num/10, n);
 	}
+	
+	public static int factorialK(int k) {
+		
+		  if (k == 1){
+			    return k;
+			  }
+		  
+			  return k * factorialK(k - 1);
+	}
 }
