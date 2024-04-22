@@ -385,12 +385,19 @@ public class Util {
 		  return countN(num/10, n);
 	}
 	
+	/**
+	 * {@link factorialK} is a method that determines the factorial of an input integer
+	 * 
+	 * @param k is the input integer
+	 * 
+	 * @return the factorial of k
+	 */
 	public static int factorialK(int k) {
-		
-		  if (k == 1){
-			    return k;
-			  }
-		  
-			  return k * factorialK(k - 1);
+
+		if (k == 1) {
+			return k;
+		}
+
+		return k * factorialK(k - 1);
 	}
 }
