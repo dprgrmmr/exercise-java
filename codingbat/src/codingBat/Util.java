@@ -394,8 +394,8 @@ public class Util {
 	 */
 	public static int factorialK(int k) {
 
-		if (k == 1) {
-			return k;
+		if (k == 0) {
+			return 1;
 		}
 
 		return k * factorialK(k - 1);
