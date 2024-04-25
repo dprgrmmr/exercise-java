@@ -401,6 +401,14 @@ public class Util {
 		return k * factorialK(k - 1);
 	}
 	
+	/**
+	 * {@link changePi} is a method that changes all instances of the word, pi, in an input String
+	 * to the mathematical number pi
+	 * 
+	 * @param str is the input String
+	 * 
+	 * @return the input String with all instances of pi changed to 3.14
+	 */
 	public static String changePi(String str) {
 		
 		if (str == null) {
