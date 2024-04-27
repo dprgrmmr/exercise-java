@@ -425,4 +425,23 @@ public class Util {
 
 		return str.substring(0, 1) + changePi(str.substring(1));
 	}
+	
+	public static int array11(int[] nums, int index) {
+		
+		if (nums.length == 0) {
+			return 0;
+		}
+		
+		if (index > nums.length) {
+			return 0;
+		}
+		
+		if (index < nums.length) {
+			if (nums[index] == 11) {
+				return 1 + array11(nums, index + 1);
+			}
+		}
+		
+		return array11(nums, index + 1);
+	}
 }
