@@ -426,6 +426,15 @@ public class Util {
 		return str.substring(0, 1) + changePi(str.substring(1));
 	}
 	
+	/**
+	 * {@link array11} is a method that counts the number of times 11 appears in an array of integers
+	 * after a certain index
+	 * 
+	 * @param nums is the input array
+	 * @param index is the starting index
+	 * 
+	 * @return the number of instances of 11 in an array after a certain index
+	 */
 	public static int array11(int[] nums, int index) {
 		
 		if (nums.length == 0) {
