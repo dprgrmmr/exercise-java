@@ -454,6 +454,14 @@ public class Util {
 		return array11(nums, index + 1);
 	}
 	
+	/**
+	 * {@link bunnyEars} is a method that adds the total number of bunny ears there are
+	 * with a certain amount of bunnies
+	 * 
+	 * @param bunnies is the amount of bunnies
+	 * 
+	 * @return the total number of ears from a certain amount of bunnies
+	 */
 	public int bunnyEars(int bunnies) {
 		
 		if (bunnies == 0) {
