@@ -462,7 +462,11 @@ public class Util {
 	 * 
 	 * @return the total number of ears from a certain amount of bunnies
 	 */
-	public int bunnyEars(int bunnies) {
+	public static int bunnyEars(int bunnies) {
+		
+		if (bunnies < 0) {
+			return 0;
+		}
 		
 		if (bunnies == 0) {
 			return bunnies;
