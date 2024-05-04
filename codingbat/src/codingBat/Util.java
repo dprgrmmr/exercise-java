@@ -475,6 +475,14 @@ public class Util {
 		return 2 + bunnyEars(bunnies - 1);
 	}
 	
+	/**
+	 * {@link bunnyEars2} is a method that adds the total number of bunny ears there are
+	 * when odd bunnies have 2 ears and even bunnies have 3 ears
+	 * 
+	 * @param bunnies is the amount of bunnies
+	 * 
+	 * @return the total number of ears from a certain amount of bunnies
+	 */
 	public static int bunnyEars2(int bunnies) {
 		
 		if (bunnies == 0) {
