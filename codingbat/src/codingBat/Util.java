@@ -485,7 +485,7 @@ public class Util {
 	 */
 	public static int bunnyEars2(int bunnies) {
 		
-		if (bunnies == 0) {
+		if (bunnies <= 0) {
 			return 0;
 		}
 		
