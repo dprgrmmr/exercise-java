@@ -517,6 +517,10 @@ public class Util {
 
 	public static String allStar(String str) {
 		
+		if (str == null) {
+			return null;
+		}
+		
 		if (str.length() <= 1) {
 			return str;
 		}
