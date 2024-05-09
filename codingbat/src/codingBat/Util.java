@@ -515,6 +515,14 @@ public class Util {
 		return array220(nums, index + 1);
 	}
 
+	/**
+	 * {@link allStar} is a method that returns a String containing the characters of 
+	 * the input String with a star in between each consecutive character
+	 * 
+	 * @param str is the input String
+	 * 
+	 * @return a String with the characters of str each separated by a star
+	 */
 	public static String allStar(String str) {
 		
 		if (str == null) {
