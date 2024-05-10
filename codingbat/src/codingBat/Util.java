@@ -496,6 +496,16 @@ public class Util {
 		return 2 + bunnyEars2(bunnies - 1);
 	}
 	
+	/**
+	 * {@link array220} is a method that determines if an array contains
+	 * somewhere a value followed in the array by that value times 10 after
+	 * a certain index
+	 * 
+	 * @param nums is the input array of integers
+	 * @param index is the starting index
+	 * 
+	 * @return true if a value is followed by that value times 10 after a certain index
+	 */
 	public static boolean array220(int[] nums, int index) {
 		
 		if (nums.length == 0) {
