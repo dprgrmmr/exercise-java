@@ -542,7 +542,24 @@ public class Util {
 		if (str.length() <= 1) {
 			return str;
 		}
-		
+		https://codingbat.com/prob/p170924
 		return str.substring(0, 1) + "*" + allStar(str.substring(1));
+	}
+	
+	public static String noX(String str) {
+		
+		if (str == null) {
+			return "";
+		}
+
+		if (str.length() == 0) {
+			return "";
+		}
+
+		if (str.substring(0, 1).equals("x")) {
+			return noX(str.substring(1));
+		}
+
+		return str.substring(0, 1) + noX(str.substring(1));
 	}
 }
