@@ -546,6 +546,13 @@ public class Util {
 		return str.substring(0, 1) + "*" + allStar(str.substring(1));
 	}
 	
+	/**
+	 * {@link no} is a method that returns the input String with all x's removed
+	 * 
+	 * @param str is the input String
+	 * 
+	 * @return an input String with all instances of x removed
+	 */
 	public static String noX(String str) {
 		
 		if (str == null) {
