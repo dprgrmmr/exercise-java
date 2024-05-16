@@ -570,7 +570,7 @@ public class Util {
 		return str.substring(0, 1) + noX(str.substring(1));
 	}
 	
-	public String changeXY(String str) {
+	public static String changeXY(String str) {
 		
 		if (str == null) {
 			return "";
