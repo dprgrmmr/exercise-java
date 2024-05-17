@@ -570,6 +570,13 @@ public class Util {
 		return str.substring(0, 1) + noX(str.substring(1));
 	}
 	
+	/**
+	 * {@link changeXY} is a method that replaces all x characters in a string with a y character
+	 * 
+	 * @param str is the input String
+	 * 
+	 * @return a String with all instances of x changed to y
+	 */
 	public static String changeXY(String str) {
 		
 		if (str == null) {
