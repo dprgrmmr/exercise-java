@@ -593,4 +593,22 @@ public class Util {
 		
 		return str.substring(0, 1) + changeXY(str.substring(1));
 		}
-}
+	
+	
+		public static int countAbc(String str) {
+			
+			if (str == null) {
+				return 0;
+			}
+			
+			if (str.length() <= 2) {
+				return 0;
+			}
+			
+			if (str.substring(0, 3).equals("aba") || str.substring(0, 3).equals("abc")) {
+				return 1 + countAbc(str.substring(1));
+			}
+			
+			return countAbc(str.substring(1));
+		}
+	}
