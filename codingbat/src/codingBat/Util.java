@@ -594,7 +594,14 @@ public class Util {
 		return str.substring(0, 1) + changeXY(str.substring(1));
 		}
 	
-	
+	/**
+	 * {@link countABC} is a method that counts the number of times either aba or abc appears
+	 * in a String
+	 * 
+	 * @param str is the input String
+	 * 
+	 * @return the number of times aba or abc appears in a String
+	 */
 		public static int countAbc(String str) {
 			
 			if (str == null) {
