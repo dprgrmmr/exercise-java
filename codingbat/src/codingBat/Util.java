@@ -619,6 +619,14 @@ public class Util {
 			return countAbc(str.substring(1));
 		}
 		
+		/**
+		 * {@link count7} is a method that counts the number of times the number 7 appears as a 
+		 * digit in an integer
+		 * 
+		 * @param n is the input integer
+		 * 
+		 * @return the number of times 7 appears in an integer
+		 */
 		public static int count7(int n) {
 
 			if (n < 7) {
