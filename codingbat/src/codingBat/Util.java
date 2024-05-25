@@ -640,4 +640,23 @@ public class Util {
 			return count7(n / 10);
 		}
 
+		public static String parenBit(String str) {
+			
+			if (str == null) {
+				return null;
+			}
+			
+			String out = "";
+			
+			for (int i = 0; i < str.length(); i++) {
+				if (str.substring(i, i + 1).equals("(")) {
+					int j = i;
+					while (!str.substring(j, j + 1).equals(")")) {
+						out += str.substring(j, j + 1);
+						j++;
+					}
+				}
+			}
+			return out + ")";
+		}
 	}
