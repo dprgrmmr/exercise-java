@@ -640,6 +640,13 @@ public class Util {
 			return count7(n / 10);
 		}
 
+		/**
+		 * {@link parenBit} is a method that returns the String in parenthesis in an input String		 * 
+		 * 
+		 * @param str is the input String
+		 * 
+		 * @return the elements inside the parenthesis in the input String
+		 */
 		public static String parenBit(String str) {
 			
 			if (str == null) {
