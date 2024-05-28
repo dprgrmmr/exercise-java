@@ -666,4 +666,24 @@ public class Util {
 			}
 			return out + ")";
 		}
+		
+public static String NBit(String str, String n) {
+			
+			if (str == null) {
+				return null;
+			}
+			
+			String out = "";
+			
+			for (int i = 0; i < str.length(); i++) {
+				if (str.substring(i, i + 1).equals("n")) {
+					int j = i + 1;
+					while (!str.substring(j, j + 1).equals("n")) {
+						out += str.substring(j, j + 1);
+						j++;
+					}
+				}
+			}
+			return out;
+		}
 	}
