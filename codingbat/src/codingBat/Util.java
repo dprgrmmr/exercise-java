@@ -667,14 +667,23 @@ public class Util {
 			return out + ")";
 		}
 		
-public static String NBit(String str, String n) {
-			
+		/**
+		 * {@link NBit} is a method that returns the characters enclosed between two instances of an input character 
+		 * or anything after the first instance if there is only one instance of it
+		 * 
+		 * @param str is the input String
+		 * @param n is the target String
+		 * 
+		 * @return the elements enclosed between the input character, n
+		 */
+		public static String NBit(String str, String n) {
+
 			if (str == null) {
 				return null;
 			}
-			
+
 			String out = "";
-			
+
 			for (int i = 0; i < str.length(); i++) {
 				if (str.substring(i, i + 1).equals("n")) {
 					int j = i + 1;
