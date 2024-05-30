@@ -653,12 +653,12 @@ public class Util {
 				return null;
 			}
 			
-			String out = "";
+			String out = "(";
 			
 			for (int i = 0; i < str.length(); i++) {
 				if (str.substring(i, i + 1).equals("(")) {
-					int j = i;
-					while (!str.substring(j, j + 1).equals(")")) {
+					int j = i + 1;
+					while (j < str.length() && !str.substring(j, j + 1).equals(")")) {
 						out += str.substring(j, j + 1);
 						j++;
 					}
