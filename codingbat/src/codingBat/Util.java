@@ -685,9 +685,9 @@ public class Util {
 			String out = "";
 
 			for (int i = 0; i < str.length(); i++) {
-				if (str.substring(i, i + 1).equals(n)) {
+				if (str.substring(i, i + n.length()).equals(n)) {
 					int j = i + 1;
-					while (!str.substring(j, j + 1).equals(n)) {
+					while (j < str.length() && !str.substring(j, j + n.length()).equals(n)) {
 						out += str.substring(j, j + 1);
 						j++;
 					}
