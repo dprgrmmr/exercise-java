@@ -695,4 +695,25 @@ public class Util {
 			}
 			return out;
 		}
+		
+		public static String changeKey(String str, String key, int nums) {
+
+			if (str == null) {
+				return null;
+			}
+
+			if (key == null) {
+				return str;
+			}
+
+			if (str.length() < key.length()) {
+				return str;
+			}
+
+			if (str.substring(0, key.length()).equals(key)) {
+				return nums + changeKey(str.substring(key.length()), key, nums);
+			}
+
+			return str.substring(0, 1) + changeKey(str.substring(1), key, nums);
+		}
 	}
