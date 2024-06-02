@@ -695,7 +695,16 @@ public class Util {
 			}
 			return out;
 		}
-		
+
+		/**
+		 * {@link changeKey} is a method that changes all instances of a String in an input String to an input integer
+		 * 
+		 * @param str is the input String
+		 * @param key is the target String
+		 * @param nums is the input integer
+		 * 
+		 * @return the input String with all instances of key replaced with nums
+		 */
 		public static String changeKey(String str, String key, int nums) {
 
 			if (str == null) {
