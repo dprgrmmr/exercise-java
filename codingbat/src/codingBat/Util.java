@@ -725,4 +725,20 @@ public class Util {
 
 			return str.substring(0, 1) + changeKey(str.substring(1), key, nums);
 		}
+		
+		public static int sumNDigits(int nums, int n) {
+
+			if (n == 0) {
+				return 0;
+			}
+
+			if (nums / 10 == 0) {
+				return nums;
+			}
+			String str = "" + nums;
+			if (n == str.length() - n) {
+				return 0;
+			}
+			return (n % 10) + sumDigits(n / 10);
+		}
 	}
