@@ -726,7 +726,14 @@ public class Util {
 			return str.substring(0, 1) + changeKey(str.substring(1), key, nums);
 		}
 		
-		
+		/**
+		 * {@link sumNDigits} is a method that returns the sum of the last n digits of an integer
+		 * 
+		 * @param nums is the input integer
+		 * @param n is the number of digits to add up
+		 * 
+		 * @return the sum of the last n digits of nums
+		 */
 		public static int sumNDigits(int nums, int n) {
 
 			if (n == 0) {
