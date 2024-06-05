@@ -743,7 +743,6 @@ public class Util {
 			if (nums / 10 == 0) {
 				return nums;
 			}
-			String str = "" + nums;
 
 			return (nums % 10) + sumNDigits(nums / 10, n - 1);
 		}
