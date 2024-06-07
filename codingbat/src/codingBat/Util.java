@@ -746,4 +746,13 @@ public class Util {
 
 			return (nums % 10) + sumNDigits(nums / 10, n - 1);
 		}
+		
+		public static String endNums(int n, int nums) {
+String str = n + "";
+String num = nums + "";
+		    	  if (str.substring(0, num.length()).equals(num)){
+		    	  return endNums(Integer.parseInt(str.substring(num.length())), nums) + num;
+		    	  }
+		    	  return str.substring(0,1) + endNums(Integer.parseInt(str.substring(1)), nums);
+		}
 	}
