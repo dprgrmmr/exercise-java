@@ -747,6 +747,15 @@ public class Util {
 			return (nums % 10) + sumNDigits(nums / 10, n - 1);
 		}
 		
+		/**
+		 * {@link endNums} is a method that returns the input integer with all instances of nums 
+		 * moved to the end
+		 * 
+		 * @param n is the input integer
+		 * @param nums is the target integer
+		 * 
+		 * @return the input integer, n, with all instances of num shifted to the end
+		 */
 		public static int endNums(int n, int nums) {
 			String str = n + "";
 			String num = nums + "";
