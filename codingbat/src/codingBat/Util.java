@@ -766,4 +766,24 @@ public class Util {
 			
 			return Integer.parseInt(str.substring(0, 1) + endNums(Integer.parseInt(str.substring(1)), nums));
 		}
+		
+		public boolean array6(int[] nums, int index) {
+			
+			if (nums.length == 0) {
+				return false;
+			}
+			
+			if (index > nums.length) {
+				return false;
+			}
+			
+			if (index < nums.length) {
+				if (nums[index] == 6) {
+					return true;
+				}
+			}
+			
+			index++;
+			return array6(nums, index);
+		}
 	}
