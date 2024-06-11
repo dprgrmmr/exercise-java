@@ -767,6 +767,15 @@ public class Util {
 			return Integer.parseInt(str.substring(0, 1) + endNums(Integer.parseInt(str.substring(1)), nums));
 		}
 		
+		/**
+		 * {@link array6} is a method that determines whether a 6 is found in an array of integers
+		 * after a specific index
+		 * 
+		 * @param nums is the input array
+		 * @param index is the starting index
+		 * 
+		 * @return true if a 6 is found in nums after the specified index and false otherwise
+		 */
 		public boolean array6(int[] nums, int index) {
 			
 			if (nums.length == 0) {
