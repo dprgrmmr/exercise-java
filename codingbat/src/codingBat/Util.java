@@ -776,7 +776,7 @@ public class Util {
 		 * 
 		 * @return true if a 6 is found in nums after the specified index and false otherwise
 		 */
-		public boolean array6(int[] nums, int index) {
+		public static boolean array6(int[] nums, int index) {
 			
 			if (nums.length == 0) {
 				return false;
