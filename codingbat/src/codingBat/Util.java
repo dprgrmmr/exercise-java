@@ -795,4 +795,16 @@ public class Util {
 			index++;
 			return array6(nums, index);
 		}
+		
+		public int sumOddDigits(int n) {
+
+			  if (n / 10 == 0){
+			    return n;
+			  }
+			  if (n % 2 != 0) {
+				   return (n % 10) + sumDigits(n / 10);
+			  }
+			 return sumDigits(n / 10);
+			}
+
 	}
