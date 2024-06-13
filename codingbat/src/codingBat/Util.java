@@ -798,13 +798,14 @@ public class Util {
 		
 		public int sumOddDigits(int n) {
 
-			  if (n / 10 == 0){
-			    return n;
-			  }
-			  if (n % 2 != 0) {
-				   return (n % 10) + sumDigits(n / 10);
-			  }
-			 return sumDigits(n / 10);
+			if (n / 10 == 0) {
+				return n;
 			}
 
+			if (n % 2 != 0) {
+				return (n % 10) + sumDigits(n / 10);
+			}
+
+			return sumDigits(n / 10);
+		}
 	}
