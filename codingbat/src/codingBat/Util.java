@@ -796,6 +796,13 @@ public class Util {
 			return array6(nums, index);
 		}
 		
+		/**
+		 * {@link sumOddDigits} is a method that adds up all the digits that are odd in an integer
+		 * 
+		 * @param n is the input integer
+		 * 
+		 * @return the sum of all odd digits within an integer
+		 */
 		public static int sumOddDigits(int n) {
 
 			if (n / 10 == 0) {
