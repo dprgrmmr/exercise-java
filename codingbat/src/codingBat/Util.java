@@ -815,4 +815,17 @@ public class Util {
 
 			return sumOddDigits(n / 10);
 		}
+		
+		public static int sumEvenDigits(int n) {
+
+			if (n / 10 == 0) {
+				return n;
+			}
+
+			if (n % 2 == 0) {
+				return (n % 10) + sumEvenDigits(n / 10);
+			}
+
+			return sumEvenDigits(n / 10);
+		}
 	}
