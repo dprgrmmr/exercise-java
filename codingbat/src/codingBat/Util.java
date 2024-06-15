@@ -805,8 +805,11 @@ public class Util {
 		 */
 		public static int sumOddDigits(int n) {
 
-			if (n / 10 == 0) {
+			if (n / 10 == 0 && n % 2 != 0) {
 				return n;
+			}
+			else if (n / 10 == 0) {
+				return 0;
 			}
 
 			if (n % 2 != 0) {
