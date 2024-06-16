@@ -819,6 +819,13 @@ public class Util {
 			return sumOddDigits(n / 10);
 		}
 		
+		/**
+		 * {@link sumEvenDigits} is a method that adds up all the digits that are even in an integer
+		 * 
+		 * @param n is the input integer
+		 * 
+		 * @return the sum of all even digits within an integer
+		 */
 		public static int sumEvenDigits(int n) {
 
 			if (n / 10 == 0 && n % 2 == 0) {
