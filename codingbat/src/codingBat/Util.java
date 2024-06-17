@@ -841,4 +841,20 @@ public class Util {
 
 			return sumEvenDigits(n / 10);
 		}
+		
+		public static int productEvenDigits(int n) {
+
+			if (n / 10 == 0 && n % 2 == 0) {
+				return n;
+			}
+			else if (n / 10 == 0) {
+				return 0;
+			}
+
+			if (n % 2 == 0) {
+				return (n % 10) * sumEvenDigits(n / 10);
+			}
+
+			return sumEvenDigits(n / 10);
+		}
 	}
