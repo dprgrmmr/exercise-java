@@ -852,9 +852,9 @@ public class Util {
 			}
 
 			if (n % 2 == 0) {
-				return (n % 10) * sumEvenDigits(n / 10);
+				return (n % 10) * productEvenDigits(n / 10);
 			}
 
-			return sumEvenDigits(n / 10);
+			return productEvenDigits(n / 10);
 		}
 	}
