@@ -842,6 +842,13 @@ public class Util {
 			return sumEvenDigits(n / 10);
 		}
 		
+		/**
+		 * {@link productEvenDigits} is a method that multiplies together all the digits that are even in an integer
+		 * 
+		 * @param n is the input integer
+		 * 
+		 * @return the product of all even digits within an integer
+		 */
 		public static int productEvenDigits(int n) {
 
 			if (n / 10 == 0 && n % 2 == 0) {
