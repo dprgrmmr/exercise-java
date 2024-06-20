@@ -865,6 +865,13 @@ public class Util {
 			return productEvenDigits(n / 10);
 		}
 		
+		/**
+		 * {@link productEvenDigits} is a method that multiplies together all the digits that are odd in an integer
+		 * 
+		 * @param n is the input integer
+		 * 
+		 * @return the product of all odd digits within an integer
+		 */
 		public static int productOddDigits(int n) {
 
 			if (n / 10 == 0 && n % 2 != 0) {
