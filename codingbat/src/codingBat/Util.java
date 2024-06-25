@@ -887,4 +887,17 @@ public class Util {
 
 			return productOddDigits(n / 10);
 		}
+		
+		public static int countEven(int num) {
+			
+			  if (num / 10 == 0 && num % 2 != 0){
+			    return 0;
+			  }
+			  
+			  if ((num % 10) % 2 == 0){
+			    return countEven(num/10) + 1;
+			  }
+			  
+			  return countEven(num/10);
+		}
 	}
