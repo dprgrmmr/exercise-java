@@ -888,6 +888,13 @@ public class Util {
 			return productOddDigits(n / 10);
 		}
 		
+		/**
+		 * {@link countEven} is a method that counts the number of even digits in an integer
+		 * 
+		 * @param num is the input integer
+		 * 
+		 * @return the number of even digits in an integer
+		 */
 		public static int countEven(int num) {
 			
 			  if (num / 10 == 0 && num % 2 != 0){
