@@ -908,7 +908,13 @@ public class Util {
 			  return countEven(num/10);
 		}
 
-
+		/**
+		 * {@link countOdd} is a method that counts the number of odd digits in an integer
+		 * 
+		 * @param num is the input integer
+		 * 
+		 * @return the number of odd digits in an integer
+		 */
 		public static int countOdd(int num) {
 
 			if (num / 10 == 0 && num % 2 == 0) {
