@@ -907,4 +907,18 @@ public class Util {
 			  
 			  return countEven(num/10);
 		}
+
+
+		public static int countOdd(int num) {
+
+			if (num / 10 == 0 && num % 2 == 0) {
+				return 0;
+			}
+
+			if ((num % 10) % 2 != 0) {
+				return countOdd(num / 10) + 1;
+			}
+
+			return countOdd(num / 10);
 	}
+}
