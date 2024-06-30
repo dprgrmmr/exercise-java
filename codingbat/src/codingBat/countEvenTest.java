@@ -6,26 +6,26 @@ import org.junit.jupiter.api.Assertions;
 public class countEvenTest {
 
 	@Test
-	public void countOddHappyCase() {
+	public void countEvenHappyCase() {
 		Assertions.assertEquals(
-				3, 
-				Util.countOdd(
+				2, 
+				Util.countEven(
 						12345));
 	}
 	
 	@Test
-	public void countOddNoOddDigitsReturnsZero() {
+	public void countEvenNoEvenDigitsReturnsZero() {
 		Assertions.assertEquals(
 				0, 
-				Util.countOdd(
-						64826));
+				Util.countEven(
+						13953));
 	}
 	
 	@Test
-	public void countOddOneDigitIsEvenReturnsZero() {
+	public void countEvenOneDigitIsEvenReturnsZero() {
 		Assertions.assertEquals(
 				0, 
-				Util.countOdd(
-						2));
+				Util.countEven(
+						1));
 	}
 }
