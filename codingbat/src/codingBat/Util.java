@@ -927,4 +927,13 @@ public class Util {
 
 			return countOdd(num / 10);
 	}
+		
+		public static int productDigits(int num) {
+			
+			if (num / 10 == 0) {
+				return num;
+			}
+			
+			return (num % 10) * productDigits(num / 10);
+		}
 }
