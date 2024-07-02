@@ -928,6 +928,13 @@ public class Util {
 			return countOdd(num / 10);
 	}
 		
+		/**
+		 * {@link productDigits} is a method that multiplies every digit of an input integer
+		 * 
+		 * @param num is the input integer
+		 * 
+		 * @return the product of all digits in an integer
+		 */
 		public static int productDigits(int num) {
 			
 			if (num / 10 == 0) {
