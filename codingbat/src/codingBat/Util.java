@@ -943,4 +943,21 @@ public class Util {
 			
 			return (num % 10) * productDigits(num / 10);
 		}
+		
+		public static String noPi(String str) {
+			
+			if (str == null) {
+				return null;
+			}
+
+			if (str.length() < 2) {
+				return str;
+			}
+
+			if (str.substring(0, 2).equals("pi")) {
+				return "" + noPi(str.substring(2));
+			}
+
+			return str.substring(0, 1) + noPi(str.substring(1));
+		}
 }
