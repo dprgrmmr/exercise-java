@@ -944,6 +944,13 @@ public class Util {
 			return (num % 10) * productDigits(num / 10);
 		}
 		
+		/**
+		 * {@link noPi} is a method that removes every instance of pi in a String
+		 * 
+		 * @param str is the input String
+		 * 
+		 * @return the contents of the input String without any instances of pi
+		 */
 		public static String noPi(String str) {
 			
 			if (str == null) {
