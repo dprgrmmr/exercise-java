@@ -1,0 +1,14 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example.com</groupId>
+    <artifactId>exercise-java</artifactId>
+    <version>1</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.10.3</version>
+=        </dependency>
+    </dependencies>
+</project>
