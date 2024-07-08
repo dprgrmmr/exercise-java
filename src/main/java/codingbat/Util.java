@@ -3,7 +3,7 @@ package codingbat;
 public class Util {
 
 	/**
-	 * {@link seq} is a method that returns numbers from one to n
+	 * {@link #seq} is a method that returns numbers from one to n
 	 * each on a new line
 	 * 
 	 * @param n is the start number
@@ -18,7 +18,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link changeStr} is a method that returns the input String with all
+	 * {@link #changeStr} is a method that returns the input String with all
 	 * appearances of str2 replaced with str3
 	 * 
 	 * @param str is the main string
@@ -967,4 +967,22 @@ public class Util {
 
 			return str.substring(0, 1) + noPi(str.substring(1));
 		}
+
+		public static int countHi(String str) {
+
+			if (str == null){
+				return 0;
+			}
+
+			if (str.length() < 2){
+				return 0;
+			}
+
+			if (str.substring(str.length() - 2, str.length()).equals("hi")){
+				return 1 + countHi(str.substring(0, str.length() - 1));
+			}
+			
+			return countHi(str.substring(0, str.length() - 1));
+		}
+
 }
