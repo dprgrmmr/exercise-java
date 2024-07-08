@@ -945,7 +945,7 @@ public class Util {
 		}
 		
 		/**
-		 * {@link noPi} is a method that removes every instance of pi in a String
+		 * {@link #noPi} is a method that removes every instance of pi in a String
 		 * 
 		 * @param str is the input String
 		 * 
@@ -981,7 +981,7 @@ public class Util {
 			if (str.substring(str.length() - 2, str.length()).equals("hi")){
 				return 1 + countHi(str.substring(0, str.length() - 1));
 			}
-			
+
 			return countHi(str.substring(0, str.length() - 1));
 		}
 
