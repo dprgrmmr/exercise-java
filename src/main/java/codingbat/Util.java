@@ -929,7 +929,7 @@ public class Util {
 	}
 		
 		/**
-		 * {@link productDigits} is a method that multiplies every digit of an input integer
+		 * {@link #productDigits} is a method that multiplies every digit of an input integer
 		 * 
 		 * @param num is the input integer
 		 * 
