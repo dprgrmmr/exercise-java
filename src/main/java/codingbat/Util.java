@@ -909,7 +909,7 @@ public class Util {
 		}
 
 		/**
-		 * {@link countOdd} is a method that counts the number of odd digits in an integer
+		 * {@link #countOdd} is a method that counts the number of odd digits in an integer
 		 * 
 		 * @param num is the input integer
 		 * 
