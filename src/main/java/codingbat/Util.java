@@ -968,6 +968,13 @@ public class Util {
 			return str.substring(0, 1) + noPi(str.substring(1));
 		}
 
+	/**
+	 * {@link #countHi} is a method that the number of times Hi appears in a String
+	 *
+	 * @param str is the input String
+	 *
+	 * @return the number of times Pi appears in a String
+	 */
 		public static int countHi(String str) {
 
 			if (str == null){
