@@ -992,12 +992,20 @@ public class Util {
 			return countHi(str.substring(0, str.length() - 1));
 		}
 
+	/**
+	 * {@link #count11} is a method that counts the number of times the String, 11, appears in an input
+	 * String, except it should not count overlaps
+	 *
+	 * @param str is the input String
+	 *
+	 * @return the number of times 11 appears in a String
+	 */
 	public int count11(String str) {
 
 			if (str == null){
 				return 0;
 			}
-			
+
 		if (str.length() < 2){
 			return 0;
 		}
