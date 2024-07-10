@@ -969,7 +969,7 @@ public class Util {
 		}
 
 	/**
-	 * {@link #countHi} is a method that the number of times Hi appears in a String
+	 * {@link #countHi} is a method that counts the number of times Hi appears in a String
 	 *
 	 * @param str is the input String
 	 *
