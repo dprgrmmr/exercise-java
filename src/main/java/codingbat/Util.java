@@ -889,7 +889,7 @@ public class Util {
 		}
 		
 		/**
-		 * {@link countEven} is a method that counts the number of even digits in an integer
+		 * {@link #countEven} is a method that counts the number of even digits in an integer
 		 * 
 		 * @param num is the input integer
 		 * 
