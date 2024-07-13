@@ -1016,6 +1016,14 @@ public class Util {
 		return count11(str.substring(1));
 	}
 
+	/**
+	 * {@link #countHi2} is a method that counts the number of times lowercase hi appears in an
+	 * input String where the letter x does not appear right before it
+	 *
+	 * @param str is the input String
+	 *
+	 * @return the number of times hi appears without an x before it
+	 */
 	public static int countHi2(String str) {
 
 		if (str == null){
