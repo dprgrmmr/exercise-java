@@ -843,7 +843,7 @@ public class Util {
 		}
 		
 		/**
-		 * {@link productEvenDigits} is a method that multiplies together all the digits that are even in an integer
+		 * {@link #productEvenDigits} is a method that multiplies together all the digits that are even in an integer
 		 * 
 		 * @param n is the input integer
 		 * 
