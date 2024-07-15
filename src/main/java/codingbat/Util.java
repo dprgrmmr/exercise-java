@@ -820,7 +820,7 @@ public class Util {
 		}
 		
 		/**
-		 * {@link sumEvenDigits} is a method that adds up all the digits that are even in an integer
+		 * {@link #sumEvenDigits} is a method that adds up all the digits that are even in an integer
 		 * 
 		 * @param n is the input integer
 		 * 
