@@ -797,7 +797,7 @@ public class Util {
 		}
 		
 		/**
-		 * {@link sumOddDigits} is a method that adds up all the digits that are odd in an integer
+		 * {@link #sumOddDigits} is a method that adds up all the digits that are odd in an integer
 		 * 
 		 * @param n is the input integer
 		 * 
