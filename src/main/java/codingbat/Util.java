@@ -768,7 +768,7 @@ public class Util {
 		}
 		
 		/**
-		 * {@link array6} is a method that determines whether a 6 is found in an array of integers
+		 * {@link #array6} is a method that determines whether a 6 is found in an array of integers
 		 * after a specific index
 		 * 
 		 * @param nums is the input array
