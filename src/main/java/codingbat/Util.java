@@ -748,7 +748,7 @@ public class Util {
 		}
 		
 		/**
-		 * {@link endNums} is a method that returns the input integer with all instances of nums 
+		 * {@link #endNums} is a method that returns the input integer with all instances of nums
 		 * moved to the end
 		 * 
 		 * @param n is the input integer
