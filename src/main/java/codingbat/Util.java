@@ -727,7 +727,7 @@ public class Util {
 		}
 		
 		/**
-		 * {@link sumNDigits} is a method that returns the sum of the last n digits of an integer
+		 * {@link #sumNDigits} is a method that returns the sum of the last n digits of an integer
 		 * 
 		 * @param nums is the input integer
 		 * @param n is the number of digits to add up
