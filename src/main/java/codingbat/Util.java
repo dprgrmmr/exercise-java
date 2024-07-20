@@ -697,7 +697,7 @@ public class Util {
 		}
 
 		/**
-		 * {@link changeKey} is a method that changes all instances of a String in an input String to an input integer
+		 * {@link #changeKey} is a method that changes all instances of a String in an input String to an input integer
 		 * 
 		 * @param str is the input String
 		 * @param key is the target String
