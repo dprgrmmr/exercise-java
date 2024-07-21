@@ -668,7 +668,7 @@ public class Util {
 		}
 		
 		/**
-		 * {@link NBit} is a method that returns the characters enclosed between two instances of an input character 
+		 * {@link #NBit} is a method that returns the characters enclosed between two instances of an input character
 		 * or anything after the first instance if there is only one instance of it
 		 * 
 		 * @param str is the input String
