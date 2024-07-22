@@ -620,7 +620,7 @@ public class Util {
 		}
 		
 		/**
-		 * {@link count7} is a method that counts the number of times the number 7 appears as a 
+		 * {@link #count7} is a method that counts the number of times the number 7 appears as a
 		 * digit in an integer
 		 * 
 		 * @param n is the input integer
