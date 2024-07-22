@@ -641,7 +641,7 @@ public class Util {
 		}
 
 		/**
-		 * {@link parenBit} is a method that returns the String in parenthesis in an input String		 * 
+		 * {@link #parenBit} is a method that returns the String in parenthesis in an input String		 *
 		 * 
 		 * @param str is the input String
 		 * 
