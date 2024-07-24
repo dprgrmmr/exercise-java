@@ -595,7 +595,7 @@ public class Util {
 		}
 	
 	/**
-	 * {@link countABC} is a method that counts the number of times either aba or abc appears
+	 * {@link #countABC} is a method that counts the number of times either aba or abc appears
 	 * in a String
 	 * 
 	 * @param str is the input String
