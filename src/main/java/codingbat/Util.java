@@ -571,7 +571,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link changeXY} is a method that replaces all x characters in a string with a y character
+	 * {@link #changeXY} is a method that replaces all x characters in a string with a y character
 	 * 
 	 * @param str is the input String
 	 * 
