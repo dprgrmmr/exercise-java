@@ -547,7 +547,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link noX} is a method that returns the input String with all x's removed
+	 * {@link #noX} is a method that returns the input String with all x's removed
 	 * 
 	 * @param str is the input String
 	 * 
