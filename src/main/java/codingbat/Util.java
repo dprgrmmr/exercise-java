@@ -526,7 +526,7 @@ public class Util {
 	}
 
 	/**
-	 * {@link allStar} is a method that returns a String containing the characters of 
+	 * {@link #allStar} is a method that returns a String containing the characters of
 	 * the input String with a star in between each consecutive character
 	 * 
 	 * @param str is the input String
