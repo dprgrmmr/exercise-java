@@ -497,7 +497,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link array220} is a method that determines if an array contains
+	 * {@link #array220} is a method that determines if an array contains
 	 * somewhere a value followed in the array by that value times 10 after
 	 * a certain index
 	 * 
