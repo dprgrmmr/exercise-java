@@ -476,7 +476,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link bunnyEars2} is a method that adds the total number of bunny ears there are
+	 * {@link #bunnyEars2} is a method that adds the total number of bunny ears there are
 	 * when odd bunnies have 2 ears and even bunnies have 3 ears
 	 * 
 	 * @param bunnies is the amount of bunnies
