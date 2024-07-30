@@ -427,7 +427,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link array11} is a method that counts the number of times 11 appears in an array of integers
+	 * {@link #array11} is a method that counts the number of times 11 appears in an array of integers
 	 * after a certain index
 	 * 
 	 * @param nums is the input array
