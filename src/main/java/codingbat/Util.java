@@ -402,7 +402,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link changePi} is a method that changes all instances of the word, pi, in an input String
+	 * {@link #changePi} is a method that changes all instances of the word, pi, in an input String
 	 * to the mathematical number pi
 	 * 
 	 * @param str is the input String
