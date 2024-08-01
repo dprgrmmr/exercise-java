@@ -386,7 +386,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link factorialK} is a method that determines the factorial of an input integer
+	 * {@link #factorialK} is a method that determines the factorial of an input integer
 	 * 
 	 * @param k is the input integer
 	 * 
