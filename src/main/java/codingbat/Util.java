@@ -363,7 +363,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link countN} is a method that determines the amount of times
+	 * {@link #countN} is a method that determines the amount of times
 	 * a specific number appears as a digit in an input number
 	 * 
 	 * @param num is the input number
