@@ -345,7 +345,7 @@ public class Util {
 	}
 
 	/**
-	 * {@link triangle} is a method that determines the amount of squares
+	 * {@link #triangle} is a method that determines the amount of squares
 	 * that make up a triangle given that the first row has one square
 	 * second row has two, third row has three, and so on.
 	 * 
