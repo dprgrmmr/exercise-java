@@ -315,7 +315,7 @@ public class Util {
 	}
 
 	/**
-	 * {@link endK} is a method that moves all instances of a specified String
+	 * {@link #endK} is a method that moves all instances of a specified String
 	 * in an input String to the end of the input String
 	 * 
 	 * @param str is the input String
