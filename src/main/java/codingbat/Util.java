@@ -290,7 +290,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link countPairs} is a method that counts the number of pairs made of duplicate characters
+	 * {@link #countPairs} is a method that counts the number of pairs made of duplicate characters
 	 * in a String separated by another character
 	 * 
 	 * @param str is the input String
