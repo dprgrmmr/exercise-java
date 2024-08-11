@@ -261,7 +261,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link arrayK} is a method that counts the number of times an integer appears
+	 * {@link #arrayK} is a method that counts the number of times an integer appears
 	 * in an array of integers after a certain index
 	 * 
 	 * @param nums is the input array of integers
