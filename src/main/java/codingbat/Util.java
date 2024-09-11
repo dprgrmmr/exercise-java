@@ -236,7 +236,7 @@ public class Util {
 	}
 	
 	/**
-	 * {@link allK} is a method that adds a custom String in between every character
+	 * {@link #allK} is a method that adds a custom String in between every character
 	 * in an input String
 	 * 
 	 * @param str is the input String
